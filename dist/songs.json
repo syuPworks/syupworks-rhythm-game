@@ -1,0 +1,72 @@
+{
+  "defaults": {
+    "jacket": "backgrounds/no-image.svg",
+    "artist": "syuPworks",
+    "genre": "Unknown",
+    "description": ""
+  },
+  "settings": {
+    "clearRate": 0.7,
+    "noteApproachTime": {
+      "easy": 2.2,
+      "normal": 2,
+      "hard": 1.8
+    }
+  },
+  "songs": [
+    {
+      "id": "self-introduction-syup",
+      "title": "自己紹介-syuP",
+      "audio": "audio/self-introduction.mp3",
+      "jacket": "backgrounds/self-introduction.png",
+      "description": "私（syuP）の自己紹介ソングです。",
+      "genre": "J-Pop",
+      "bpm": 95,
+      "previewStart": 0,
+      "playable": true,
+      "charts": {
+        "easy": "charts/self-introduction-easy.json",
+        "normal": "charts/self-introduction-normal.json",
+        "hard": "charts/self-introduction-hard.json"
+      }
+    },
+    {
+      "id": "ano-kaze",
+      "title": "あの風の中に",
+      "artist": "syuPworks",
+      "audio": "audio/ano-kaze.mp3",
+      "jacket": "backgrounds/ano-kaze-cover.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/ano-kaze-cover.jpg"
+      },
+      "description": "桜の季節、風に運ばれる記憶を描いた楽曲です。",
+      "genre": "J-Pop",
+      "bpm": 87.75,
+      "previewStart": 0,
+      "clearRate": 0.7,
+      "charts": {
+        "easy": "charts/easy.json",
+        "normal": "charts/normal.json",
+        "hard": "charts/hard.json"
+      }
+    },
+    {
+      "id": "destiny-signal",
+      "title": "運命のシグナル",
+      "artist": "syuPworks",
+      "audio": "audio/destiny-signal.mp3",
+      "jacket": "backgrounds/destiny-signal.jpg",
+      "description": "ビビビ、運命のシグナル　感じた？",
+      "genre": "J-Pop",
+      "bpm": 110,
+      "previewStart": 0,
+      "playable": true,
+      "charts": {
+        "easy": "charts/destiny-signal-easy.json",
+        "normal": "charts/destiny-signal-normal.json",
+        "hard": "charts/destiny-signal-hard.json"
+      }
+    }
+  ]
+}

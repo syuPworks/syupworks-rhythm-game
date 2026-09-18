@@ -1,0 +1,25 @@
+# GitHub Pages public-only repository: track only the generated PUBLIC build.
+/*
+!/.gitignore
+!/dist/
+!/dist/**
+
+# Explicit documentation for development-only material (already covered above).
+/outputs/
+/scripts/
+/work/
+/node_modules/
+*.wav
+*.log
+*.tmp
+*.temp
+.dist-public-*/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
