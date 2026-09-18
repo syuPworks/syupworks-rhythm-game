@@ -3,6 +3,9 @@
 !/.gitignore
 !/dist/
 !/dist/**
+!/.github/
+!/.github/workflows/
+!/.github/workflows/**
 
 # Explicit documentation for development-only material (already covered above).
 /outputs/
