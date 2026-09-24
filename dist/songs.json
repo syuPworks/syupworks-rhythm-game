@@ -23,6 +23,8 @@
       "genre": "J-Pop",
       "bpm": 95,
       "previewStart": 0,
+      "promoStart": 56.1,
+      "promoDuration": 30,
       "playable": true,
       "charts": {
         "easy": "charts/self-introduction-easy.json",
@@ -44,6 +46,8 @@
       "genre": "J-Pop",
       "bpm": 87.75,
       "previewStart": 0,
+      "promoStart": 59,
+      "promoDuration": 30,
       "clearRate": 0.7,
       "charts": {
         "easy": "charts/easy.json",
@@ -61,11 +65,234 @@
       "genre": "J-Pop",
       "bpm": 110,
       "previewStart": 0,
+      "promoStart": 52,
+      "promoDuration": 30,
       "playable": true,
+      "analysis": "charts/destiny-signal-analysis.json",
       "charts": {
         "easy": "charts/destiny-signal-easy.json",
         "normal": "charts/destiny-signal-normal.json",
         "hard": "charts/destiny-signal-hard.json"
+      }
+    },
+    {
+      "id": "nee",
+      "title": "ねぇ",
+      "artist": "syuPworks",
+      "audio": "audio/nee.mp3",
+      "jacket": "backgrounds/nee.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/nee.jpg"
+      },
+      "description": "離れていく相手への不安と寂しさを、「ねぇ」という問いかけに込めた楽曲です。",
+      "genre": "J-Pop / Electronic / Eurobeat",
+      "bpm": 148,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/nee-analysis.json",
+      "charts": {
+        "easy": "charts/nee-easy.json",
+        "normal": "charts/nee-normal.json",
+        "hard": "charts/nee-hard.json"
+      }
+    },
+    {
+      "id": "wanted-to-be-bubbles",
+      "title": "泡になりたかった",
+      "artist": "syuPworks",
+      "audio": "audio/wanted-to-be-bubbles.mp3",
+      "jacket": "backgrounds/wanted-to-be-bubbles.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/wanted-to-be-bubbles.jpg"
+      },
+      "description": "消えてしまいたいと願いながらも、忘れられない「君」の声に心を繋ぎ止められる。静かな孤独と未練を描いた切ない楽曲です。",
+      "genre": "Ballad",
+      "bpm": 120.5,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/wanted-to-be-bubbles-analysis.json",
+      "charts": {
+        "easy": "charts/wanted-to-be-bubbles-easy.json",
+        "normal": "charts/wanted-to-be-bubbles-normal.json",
+        "hard": "charts/wanted-to-be-bubbles-hard.json"
+      }
+    },
+    {
+      "id": "reason-for-tears",
+      "title": "涙の理由",
+      "artist": "syuPworks",
+      "audio": "audio/reason-for-tears.mp3",
+      "jacket": "backgrounds/reason-for-tears.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/reason-for-tears.jpg"
+      },
+      "description": "強がることに慣れ、本当の気持ちを隠してしまった少女。忘れられない「君」への想いと、涙に残った優しさを描いた切ない楽曲です。",
+      "genre": "Ballad",
+      "bpm": 126.5,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/reason-for-tears-analysis.json",
+      "charts": {
+        "easy": "charts/reason-for-tears-easy.json",
+        "normal": "charts/reason-for-tears-normal.json",
+        "hard": "charts/reason-for-tears-hard.json"
+      }
+    },
+    {
+      "id": "might-change-your-life",
+      "title": "人生変えちゃうかも？",
+      "artist": "syuPworks",
+      "audio": "audio/might-change-your-life.mp3",
+      "jacket": "backgrounds/might-change-your-life.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/might-change-your-life.jpg"
+      },
+      "description": "偶然の出会いが、いつの間にか運命に変わっていく。ちょっぴり強気な女の子の恋心を、軽快に描いたポップな楽曲です。",
+      "genre": "J-Pop",
+      "bpm": 140,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/might-change-your-life-analysis.json",
+      "charts": {
+        "easy": "charts/might-change-your-life-easy.json",
+        "normal": "charts/might-change-your-life-normal.json",
+        "hard": "charts/might-change-your-life-hard.json"
+      }
+    },
+    {
+      "id": "gozaru-de-gozaru",
+      "title": "ござるでござる",
+      "artist": "syuPworks",
+      "audio": "audio/gozaru-de-gozaru.mp3",
+      "jacket": "backgrounds/gozaru-de-gozaru.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/gozaru-de-gozaru.jpg"
+      },
+      "description": "「ござる」をもっと流行らせたい！聴けばいつの間にか口癖になってしまう、和風ノリ全開のコミカルで中毒性のある楽曲でござる。",
+      "genre": "Electronic",
+      "bpm": 126.5,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/gozaru-de-gozaru-analysis.json",
+      "charts": {
+        "easy": "charts/gozaru-de-gozaru-easy.json",
+        "normal": "charts/gozaru-de-gozaru-normal.json",
+        "hard": "charts/gozaru-de-gozaru-hard.json"
+      }
+    },
+    {
+      "id": "memory-of-rain",
+      "title": "雨の記憶",
+      "artist": "syuPworks",
+      "audio": "audio/memory-of-rain.mp3",
+      "jacket": "backgrounds/memory-of-rain.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/memory-of-rain.jpg"
+      },
+      "description": "雨の日に別れた、大切な人との記憶。伝えられなかった「好き」と、今も消えない面影を雨音に重ねた切ない楽曲です。",
+      "genre": "Ballad",
+      "bpm": 88,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/memory-of-rain-analysis.json",
+      "charts": {
+        "easy": "charts/memory-of-rain-easy.json",
+        "normal": "charts/memory-of-rain-normal.json",
+        "hard": "charts/memory-of-rain-hard.json"
+      }
+    },
+    {
+      "id": "gyutte-shite",
+      "title": "ぎゅってして",
+      "artist": "syuPworks",
+      "audio": "audio/gyutte-shite.mp3",
+      "jacket": "backgrounds/gyutte-shite.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/gyutte-shite.jpg"
+      },
+      "description": "「ぎゅってして」ただ、それだけ伝えたい。まっすぐな甘えと寂しさを、繰り返す言葉に詰め込んだシンプルでキュートな楽曲です。",
+      "genre": "Electronic",
+      "bpm": 88,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/gyutte-shite-analysis.json",
+      "charts": {
+        "easy": "charts/gyutte-shite-easy.json",
+        "normal": "charts/gyutte-shite-normal.json",
+        "hard": "charts/gyutte-shite-hard.json"
+      }
+    },
+    {
+      "id": "kawaii",
+      "title": "かわいい♡",
+      "artist": "syuPworks",
+      "audio": "audio/kawaii.mp3",
+      "jacket": "backgrounds/kawaii.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/kawaii.jpg"
+      },
+      "description": "いぬも、ねこも、うさぎも、ぜんぶかわいい♡「かわいい」と「尊い」をこれでもかと詰め込んだ、キュン全開のハッピーで中毒性のある楽曲です♡",
+      "genre": "Electronic",
+      "bpm": 120.5,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/kawaii-analysis.json",
+      "charts": {
+        "easy": "charts/kawaii-easy.json",
+        "normal": "charts/kawaii-normal.json",
+        "hard": "charts/kawaii-hard.json"
+      }
+    },
+    {
+      "id": "demon-killer",
+      "title": "Demon Killer",
+      "artist": "syuPworks",
+      "audio": "audio/demon-killer.mp3",
+      "jacket": "backgrounds/demon-killer.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/demon-killer.jpg"
+      },
+      "description": "世界を救う理由は、プリンを食べたいから♡ カタナとデスボとにゃんにゃんパワーで邪神をぶった斬る、かわいさと狂気が炸裂するカオスメタル楽曲です♡",
+      "genre": "Metal",
+      "bpm": 178.75,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/demon-killer-analysis.json",
+      "charts": {
+        "easy": "charts/demon-killer-easy.json",
+        "normal": "charts/demon-killer-normal.json",
+        "hard": "charts/demon-killer-hard.json"
+      }
+    },
+    {
+      "id": "yusha-no-bouken",
+      "title": "ゆうしゃのぼうけん",
+      "artist": "syuPworks",
+      "audio": "audio/yusha-no-bouken.mp3",
+      "jacket": "backgrounds/yusha-no-bouken.jpg",
+      "media": {
+        "type": "image",
+        "src": "backgrounds/yusha-no-bouken.jpg"
+      },
+      "description": "ゆうしゃのぼうけん、あつまれみんな！",
+      "genre": "Electronic",
+      "bpm": 157,
+      "previewStart": 0,
+      "playable": true,
+      "analysis": "charts/yusha-no-bouken-analysis.json",
+      "charts": {
+        "easy": "charts/yusha-no-bouken-easy.json",
+        "normal": "charts/yusha-no-bouken-normal.json",
+        "hard": "charts/yusha-no-bouken-hard.json"
       }
     }
   ]

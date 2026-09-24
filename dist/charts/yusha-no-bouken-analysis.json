@@ -1,0 +1,226 @@
+{
+  "file": "yusha-no-bouken.mp3",
+  "duration": 137.8,
+  "effectiveEndTime": 133.12,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.030536,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 157,
+  "tempoCandidates": [
+    {
+      "bpm": 157,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 157.25,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 157.5,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 157.75,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 158,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 158.25,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 158.5,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 158.75,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 159,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 159.25,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 159.5,
+      "score": 0.00034652
+    },
+    {
+      "bpm": 159.75,
+      "score": 0.00034652
+    }
+  ],
+  "beatInterval": 0.38217,
+  "beatOffset": 0.01,
+  "beatCount": 361,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 134.532,
+      "end": 137.8
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.01,
+      "end": 6.125,
+      "energy": 0.12903,
+      "label": "intro"
+    },
+    {
+      "start": 6.125,
+      "end": 12.239,
+      "energy": 0.13885,
+      "label": "main"
+    },
+    {
+      "start": 12.239,
+      "end": 18.354,
+      "energy": 0.15865,
+      "label": "high-energy"
+    },
+    {
+      "start": 18.354,
+      "end": 24.469,
+      "energy": 0.14513,
+      "label": "main"
+    },
+    {
+      "start": 24.469,
+      "end": 30.583,
+      "energy": 0.14752,
+      "label": "main"
+    },
+    {
+      "start": 30.583,
+      "end": 36.698,
+      "energy": 0.14645,
+      "label": "main"
+    },
+    {
+      "start": 36.698,
+      "end": 42.813,
+      "energy": 0.15645,
+      "label": "high-energy"
+    },
+    {
+      "start": 42.813,
+      "end": 48.927,
+      "energy": 0.14755,
+      "label": "main"
+    },
+    {
+      "start": 48.927,
+      "end": 55.042,
+      "energy": 0.14069,
+      "label": "main"
+    },
+    {
+      "start": 55.042,
+      "end": 61.156,
+      "energy": 0.07557,
+      "label": "main"
+    },
+    {
+      "start": 61.156,
+      "end": 67.271,
+      "energy": 0.11653,
+      "label": "main"
+    },
+    {
+      "start": 67.271,
+      "end": 73.386,
+      "energy": 0.15913,
+      "label": "high-energy"
+    },
+    {
+      "start": 73.386,
+      "end": 79.5,
+      "energy": 0.15665,
+      "label": "high-energy"
+    },
+    {
+      "start": 79.5,
+      "end": 85.615,
+      "energy": 0.14562,
+      "label": "main"
+    },
+    {
+      "start": 85.615,
+      "end": 91.73,
+      "energy": 0.13785,
+      "label": "main"
+    },
+    {
+      "start": 91.73,
+      "end": 97.844,
+      "energy": 0.12378,
+      "label": "main"
+    },
+    {
+      "start": 97.844,
+      "end": 103.959,
+      "energy": 0.16263,
+      "label": "high-energy"
+    },
+    {
+      "start": 103.959,
+      "end": 110.074,
+      "energy": 0.15379,
+      "label": "main"
+    },
+    {
+      "start": 110.074,
+      "end": 116.188,
+      "energy": 0.15594,
+      "label": "high-energy"
+    },
+    {
+      "start": 116.188,
+      "end": 122.303,
+      "energy": 0.15463,
+      "label": "main"
+    },
+    {
+      "start": 122.303,
+      "end": 128.418,
+      "energy": 0.15873,
+      "label": "high-energy"
+    },
+    {
+      "start": 128.418,
+      "end": 134.532,
+      "energy": 0.11689,
+      "label": "main"
+    },
+    {
+      "start": 134.532,
+      "end": 137.8,
+      "energy": 0.00155,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 259,
+    "normal": 484,
+    "hard": 694
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "yusha-no-bouken-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

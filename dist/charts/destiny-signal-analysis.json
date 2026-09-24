@@ -1,0 +1,196 @@
+{
+  "file": "destiny-signal.mp3",
+  "duration": 153.08,
+  "effectiveEndTime": 148.979,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.02458,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 110.25,
+  "tempoCandidates": [
+    {
+      "bpm": 110.25,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 110.5,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 110.75,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 111,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 111.25,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 111.5,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 111.75,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 112,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 112.25,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 112.5,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 112.75,
+      "score": 0.00076291
+    },
+    {
+      "bpm": 113,
+      "score": 0.00076291
+    }
+  ],
+  "beatInterval": 0.54422,
+  "beatOffset": 0.385,
+  "beatCount": 281,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 148.412,
+      "end": 153.08
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.385,
+      "end": 9.092,
+      "energy": 0.08191,
+      "label": "intro"
+    },
+    {
+      "start": 9.092,
+      "end": 17.8,
+      "energy": 0.11818,
+      "label": "main"
+    },
+    {
+      "start": 17.8,
+      "end": 26.507,
+      "energy": 0.05825,
+      "label": "main"
+    },
+    {
+      "start": 26.507,
+      "end": 35.215,
+      "energy": 0.06454,
+      "label": "main"
+    },
+    {
+      "start": 35.215,
+      "end": 43.922,
+      "energy": 0.13109,
+      "label": "main"
+    },
+    {
+      "start": 43.922,
+      "end": 52.63,
+      "energy": 0.12576,
+      "label": "main"
+    },
+    {
+      "start": 52.63,
+      "end": 61.337,
+      "energy": 0.15083,
+      "label": "high-energy"
+    },
+    {
+      "start": 61.337,
+      "end": 70.045,
+      "energy": 0.13937,
+      "label": "high-energy"
+    },
+    {
+      "start": 70.045,
+      "end": 78.752,
+      "energy": 0.12943,
+      "label": "main"
+    },
+    {
+      "start": 78.752,
+      "end": 87.46,
+      "energy": 0.12255,
+      "label": "main"
+    },
+    {
+      "start": 87.46,
+      "end": 96.167,
+      "energy": 0.09701,
+      "label": "main"
+    },
+    {
+      "start": 96.167,
+      "end": 104.875,
+      "energy": 0.09974,
+      "label": "main"
+    },
+    {
+      "start": 104.875,
+      "end": 113.582,
+      "energy": 0.14449,
+      "label": "high-energy"
+    },
+    {
+      "start": 113.582,
+      "end": 122.29,
+      "energy": 0.15666,
+      "label": "high-energy"
+    },
+    {
+      "start": 122.29,
+      "end": 130.997,
+      "energy": 0.14466,
+      "label": "high-energy"
+    },
+    {
+      "start": 130.997,
+      "end": 139.705,
+      "energy": 0.14259,
+      "label": "high-energy"
+    },
+    {
+      "start": 139.705,
+      "end": 148.412,
+      "energy": 0.05356,
+      "label": "main"
+    },
+    {
+      "start": 148.412,
+      "end": 153.08,
+      "energy": 0.00782,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 179,
+    "normal": 361,
+    "hard": 500
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "destiny-signal-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

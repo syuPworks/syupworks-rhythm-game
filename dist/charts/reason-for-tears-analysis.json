@@ -1,0 +1,310 @@
+{
+  "file": "reason-for-tears.mp3",
+  "duration": 259.12,
+  "effectiveEndTime": 253.467,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.029039,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 126.5,
+  "tempoCandidates": [
+    {
+      "bpm": 126.5,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 126.75,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 127,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 127.25,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 127.5,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 127.75,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 128,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 128.25,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 128.5,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 128.75,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 129,
+      "score": 0.00012335
+    },
+    {
+      "bpm": 129.25,
+      "score": 0.00012335
+    }
+  ],
+  "beatInterval": 0.47431,
+  "beatOffset": 0.11,
+  "beatCount": 547,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 0.11,
+      "end": 7.699
+    },
+    {
+      "start": 7.699,
+      "end": 15.288
+    },
+    {
+      "start": 22.877,
+      "end": 30.466
+    },
+    {
+      "start": 258.134,
+      "end": 259.12
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.11,
+      "end": 7.699,
+      "energy": 0.0319,
+      "label": "break"
+    },
+    {
+      "start": 7.699,
+      "end": 15.288,
+      "energy": 0.04906,
+      "label": "break"
+    },
+    {
+      "start": 15.288,
+      "end": 22.877,
+      "energy": 0.0582,
+      "label": "main"
+    },
+    {
+      "start": 22.877,
+      "end": 30.466,
+      "energy": 0.04583,
+      "label": "break"
+    },
+    {
+      "start": 30.466,
+      "end": 38.055,
+      "energy": 0.0966,
+      "label": "main"
+    },
+    {
+      "start": 38.055,
+      "end": 45.644,
+      "energy": 0.10947,
+      "label": "main"
+    },
+    {
+      "start": 45.644,
+      "end": 53.233,
+      "energy": 0.11193,
+      "label": "main"
+    },
+    {
+      "start": 53.233,
+      "end": 60.821,
+      "energy": 0.12839,
+      "label": "main"
+    },
+    {
+      "start": 60.821,
+      "end": 68.41,
+      "energy": 0.12336,
+      "label": "main"
+    },
+    {
+      "start": 68.41,
+      "end": 75.999,
+      "energy": 0.14886,
+      "label": "main"
+    },
+    {
+      "start": 75.999,
+      "end": 83.588,
+      "energy": 0.13953,
+      "label": "main"
+    },
+    {
+      "start": 83.588,
+      "end": 91.177,
+      "energy": 0.13367,
+      "label": "main"
+    },
+    {
+      "start": 91.177,
+      "end": 98.766,
+      "energy": 0.10412,
+      "label": "main"
+    },
+    {
+      "start": 98.766,
+      "end": 106.355,
+      "energy": 0.13772,
+      "label": "main"
+    },
+    {
+      "start": 106.355,
+      "end": 113.944,
+      "energy": 0.14538,
+      "label": "main"
+    },
+    {
+      "start": 113.944,
+      "end": 121.533,
+      "energy": 0.14314,
+      "label": "main"
+    },
+    {
+      "start": 121.533,
+      "end": 129.122,
+      "energy": 0.12497,
+      "label": "main"
+    },
+    {
+      "start": 129.122,
+      "end": 136.711,
+      "energy": 0.14671,
+      "label": "main"
+    },
+    {
+      "start": 136.711,
+      "end": 144.3,
+      "energy": 0.12835,
+      "label": "main"
+    },
+    {
+      "start": 144.3,
+      "end": 151.889,
+      "energy": 0.16861,
+      "label": "high-energy"
+    },
+    {
+      "start": 151.889,
+      "end": 159.478,
+      "energy": 0.13725,
+      "label": "main"
+    },
+    {
+      "start": 159.478,
+      "end": 167.067,
+      "energy": 0.19324,
+      "label": "high-energy"
+    },
+    {
+      "start": 167.067,
+      "end": 174.655,
+      "energy": 0.18832,
+      "label": "high-energy"
+    },
+    {
+      "start": 174.655,
+      "end": 182.244,
+      "energy": 0.21611,
+      "label": "high-energy"
+    },
+    {
+      "start": 182.244,
+      "end": 189.833,
+      "energy": 0.18058,
+      "label": "high-energy"
+    },
+    {
+      "start": 189.833,
+      "end": 197.422,
+      "energy": 0.19263,
+      "label": "high-energy"
+    },
+    {
+      "start": 197.422,
+      "end": 205.011,
+      "energy": 0.12924,
+      "label": "main"
+    },
+    {
+      "start": 205.011,
+      "end": 212.6,
+      "energy": 0.07801,
+      "label": "main"
+    },
+    {
+      "start": 212.6,
+      "end": 220.189,
+      "energy": 0.05229,
+      "label": "main"
+    },
+    {
+      "start": 220.189,
+      "end": 227.778,
+      "energy": 0.16316,
+      "label": "high-energy"
+    },
+    {
+      "start": 227.778,
+      "end": 235.367,
+      "energy": 0.25366,
+      "label": "high-energy"
+    },
+    {
+      "start": 235.367,
+      "end": 242.956,
+      "energy": 0.20385,
+      "label": "high-energy"
+    },
+    {
+      "start": 242.956,
+      "end": 250.545,
+      "energy": 0.18987,
+      "label": "high-energy"
+    },
+    {
+      "start": 250.545,
+      "end": 258.134,
+      "energy": 0.05323,
+      "label": "main"
+    },
+    {
+      "start": 258.134,
+      "end": 259.12,
+      "energy": 0,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 397,
+    "normal": 756,
+    "hard": 1062
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "reason-for-tears-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}
