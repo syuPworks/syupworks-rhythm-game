@@ -1,0 +1,218 @@
+{
+  "file": "memory-of-rain.mp3",
+  "duration": 224.8,
+  "effectiveEndTime": 218.105,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.023149,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 88,
+  "tempoCandidates": [
+    {
+      "bpm": 88,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 88.25,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 88.5,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 88.75,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 89,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 89.25,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 89.5,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 89.75,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 90,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 90.25,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 90.5,
+      "score": 0.00007585
+    },
+    {
+      "bpm": 90.75,
+      "score": 0.00007585
+    }
+  ],
+  "beatInterval": 0.68182,
+  "beatOffset": 0.045,
+  "beatCount": 330,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 0.045,
+      "end": 10.954
+    },
+    {
+      "start": 218.227,
+      "end": 224.8
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.045,
+      "end": 10.954,
+      "energy": 0.03899,
+      "label": "break"
+    },
+    {
+      "start": 10.954,
+      "end": 21.863,
+      "energy": 0.05668,
+      "label": "main"
+    },
+    {
+      "start": 21.863,
+      "end": 32.772,
+      "energy": 0.05697,
+      "label": "main"
+    },
+    {
+      "start": 32.772,
+      "end": 43.681,
+      "energy": 0.08155,
+      "label": "main"
+    },
+    {
+      "start": 43.681,
+      "end": 54.59,
+      "energy": 0.08009,
+      "label": "main"
+    },
+    {
+      "start": 54.59,
+      "end": 65.5,
+      "energy": 0.13394,
+      "label": "high-energy"
+    },
+    {
+      "start": 65.5,
+      "end": 76.409,
+      "energy": 0.13384,
+      "label": "main"
+    },
+    {
+      "start": 76.409,
+      "end": 87.318,
+      "energy": 0.07453,
+      "label": "main"
+    },
+    {
+      "start": 87.318,
+      "end": 98.227,
+      "energy": 0.12156,
+      "label": "main"
+    },
+    {
+      "start": 98.227,
+      "end": 109.136,
+      "energy": 0.13038,
+      "label": "main"
+    },
+    {
+      "start": 109.136,
+      "end": 120.045,
+      "energy": 0.14854,
+      "label": "high-energy"
+    },
+    {
+      "start": 120.045,
+      "end": 130.954,
+      "energy": 0.14446,
+      "label": "high-energy"
+    },
+    {
+      "start": 130.954,
+      "end": 141.863,
+      "energy": 0.16188,
+      "label": "high-energy"
+    },
+    {
+      "start": 141.863,
+      "end": 152.772,
+      "energy": 0.15932,
+      "label": "high-energy"
+    },
+    {
+      "start": 152.772,
+      "end": 163.681,
+      "energy": 0.10371,
+      "label": "main"
+    },
+    {
+      "start": 163.681,
+      "end": 174.59,
+      "energy": 0.11282,
+      "label": "main"
+    },
+    {
+      "start": 174.59,
+      "end": 185.5,
+      "energy": 0.10775,
+      "label": "main"
+    },
+    {
+      "start": 185.5,
+      "end": 196.409,
+      "energy": 0.15615,
+      "label": "high-energy"
+    },
+    {
+      "start": 196.409,
+      "end": 207.318,
+      "energy": 0.12103,
+      "label": "main"
+    },
+    {
+      "start": 207.318,
+      "end": 218.227,
+      "energy": 0.04216,
+      "label": "main"
+    },
+    {
+      "start": 218.227,
+      "end": 224.8,
+      "energy": 0.00405,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 283,
+    "normal": 539,
+    "hard": 658
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "memory-of-rain-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "file": "might-change-your-life.mp3",
+  "duration": 142.72,
+  "effectiveEndTime": 140.148,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.027589,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 140,
+  "tempoCandidates": [
+    {
+      "bpm": 70,
+      "score": 0.00059541
+    },
+    {
+      "bpm": 70.25,
+      "score": 0.00059541
+    },
+    {
+      "bpm": 70.5,
+      "score": 0.00059541
+    },
+    {
+      "bpm": 70.75,
+      "score": 0.00059541
+    },
+    {
+      "bpm": 140,
+      "score": 0.00042969
+    },
+    {
+      "bpm": 140.25,
+      "score": 0.00042969
+    },
+    {
+      "bpm": 140.5,
+      "score": 0.00042969
+    },
+    {
+      "bpm": 140.75,
+      "score": 0.00042969
+    },
+    {
+      "bpm": 141,
+      "score": 0.00042969
+    },
+    {
+      "bpm": 141.25,
+      "score": 0.00042969
+    },
+    {
+      "bpm": 141.5,
+      "score": 0.00042969
+    },
+    {
+      "bpm": 141.75,
+      "score": 0.00042969
+    }
+  ],
+  "beatInterval": 0.42857,
+  "beatOffset": 0.07,
+  "beatCount": 333,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [],
+  "sections": [
+    {
+      "start": 0.07,
+      "end": 6.927,
+      "energy": 0.08753,
+      "label": "intro"
+    },
+    {
+      "start": 6.927,
+      "end": 13.784,
+      "energy": 0.12326,
+      "label": "main"
+    },
+    {
+      "start": 13.784,
+      "end": 20.641,
+      "energy": 0.11801,
+      "label": "main"
+    },
+    {
+      "start": 20.641,
+      "end": 27.499,
+      "energy": 0.12265,
+      "label": "main"
+    },
+    {
+      "start": 27.499,
+      "end": 34.356,
+      "energy": 0.14186,
+      "label": "high-energy"
+    },
+    {
+      "start": 34.356,
+      "end": 41.213,
+      "energy": 0.16112,
+      "label": "high-energy"
+    },
+    {
+      "start": 41.213,
+      "end": 48.07,
+      "energy": 0.1317,
+      "label": "main"
+    },
+    {
+      "start": 48.07,
+      "end": 54.927,
+      "energy": 0.11624,
+      "label": "main"
+    },
+    {
+      "start": 54.927,
+      "end": 61.784,
+      "energy": 0.11889,
+      "label": "main"
+    },
+    {
+      "start": 61.784,
+      "end": 68.641,
+      "energy": 0.13129,
+      "label": "main"
+    },
+    {
+      "start": 68.641,
+      "end": 75.499,
+      "energy": 0.15652,
+      "label": "high-energy"
+    },
+    {
+      "start": 75.499,
+      "end": 82.356,
+      "energy": 0.14042,
+      "label": "high-energy"
+    },
+    {
+      "start": 82.356,
+      "end": 89.213,
+      "energy": 0.13916,
+      "label": "main"
+    },
+    {
+      "start": 89.213,
+      "end": 96.07,
+      "energy": 0.08146,
+      "label": "main"
+    },
+    {
+      "start": 96.07,
+      "end": 102.927,
+      "energy": 0.08777,
+      "label": "main"
+    },
+    {
+      "start": 102.927,
+      "end": 109.784,
+      "energy": 0.11835,
+      "label": "main"
+    },
+    {
+      "start": 109.784,
+      "end": 116.641,
+      "energy": 0.13059,
+      "label": "main"
+    },
+    {
+      "start": 116.641,
+      "end": 123.499,
+      "energy": 0.13639,
+      "label": "main"
+    },
+    {
+      "start": 123.499,
+      "end": 130.356,
+      "energy": 0.16005,
+      "label": "high-energy"
+    },
+    {
+      "start": 130.356,
+      "end": 137.213,
+      "energy": 0.14268,
+      "label": "high-energy"
+    },
+    {
+      "start": 137.213,
+      "end": 142.72,
+      "energy": 0.07894,
+      "label": "main"
+    }
+  ],
+  "charts": {
+    "easy": 303,
+    "normal": 576,
+    "hard": 686
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "might-change-your-life-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

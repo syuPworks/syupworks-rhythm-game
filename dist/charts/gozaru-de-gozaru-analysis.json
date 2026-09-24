@@ -1,0 +1,212 @@
+{
+  "file": "gozaru-de-gozaru.mp3",
+  "duration": 144.84,
+  "effectiveEndTime": 143.311,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.027576,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 126.5,
+  "tempoCandidates": [
+    {
+      "bpm": 126.5,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 126.75,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 127,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 127.25,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 127.5,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 127.75,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 128,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 128.25,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 128.5,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 128.75,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 129,
+      "score": 0.00128231
+    },
+    {
+      "bpm": 129.25,
+      "score": 0.00128231
+    }
+  ],
+  "beatInterval": 0.47431,
+  "beatOffset": 0.1,
+  "beatCount": 306,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 0.1,
+      "end": 7.689
+    },
+    {
+      "start": 144.29,
+      "end": 144.84
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.1,
+      "end": 7.689,
+      "energy": 0.04093,
+      "label": "break"
+    },
+    {
+      "start": 7.689,
+      "end": 15.278,
+      "energy": 0.07442,
+      "label": "main"
+    },
+    {
+      "start": 15.278,
+      "end": 22.867,
+      "energy": 0.11952,
+      "label": "main"
+    },
+    {
+      "start": 22.867,
+      "end": 30.456,
+      "energy": 0.09924,
+      "label": "main"
+    },
+    {
+      "start": 30.456,
+      "end": 38.045,
+      "energy": 0.12697,
+      "label": "main"
+    },
+    {
+      "start": 38.045,
+      "end": 45.634,
+      "energy": 0.15535,
+      "label": "high-energy"
+    },
+    {
+      "start": 45.634,
+      "end": 53.223,
+      "energy": 0.15112,
+      "label": "high-energy"
+    },
+    {
+      "start": 53.223,
+      "end": 60.811,
+      "energy": 0.14791,
+      "label": "main"
+    },
+    {
+      "start": 60.811,
+      "end": 68.4,
+      "energy": 0.11732,
+      "label": "main"
+    },
+    {
+      "start": 68.4,
+      "end": 75.989,
+      "energy": 0.11363,
+      "label": "main"
+    },
+    {
+      "start": 75.989,
+      "end": 83.578,
+      "energy": 0.1181,
+      "label": "main"
+    },
+    {
+      "start": 83.578,
+      "end": 91.167,
+      "energy": 0.15618,
+      "label": "high-energy"
+    },
+    {
+      "start": 91.167,
+      "end": 98.756,
+      "energy": 0.13983,
+      "label": "main"
+    },
+    {
+      "start": 98.756,
+      "end": 106.345,
+      "energy": 0.13415,
+      "label": "main"
+    },
+    {
+      "start": 106.345,
+      "end": 113.934,
+      "energy": 0.11415,
+      "label": "main"
+    },
+    {
+      "start": 113.934,
+      "end": 121.523,
+      "energy": 0.16001,
+      "label": "high-energy"
+    },
+    {
+      "start": 121.523,
+      "end": 129.112,
+      "energy": 0.16065,
+      "label": "high-energy"
+    },
+    {
+      "start": 129.112,
+      "end": 136.701,
+      "energy": 0.15069,
+      "label": "high-energy"
+    },
+    {
+      "start": 136.701,
+      "end": 144.29,
+      "energy": 0.1122,
+      "label": "main"
+    },
+    {
+      "start": 144.29,
+      "end": 144.84,
+      "energy": 0,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 190,
+    "normal": 357,
+    "hard": 534
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "gozaru-de-gozaru-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

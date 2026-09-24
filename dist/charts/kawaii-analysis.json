@@ -1,0 +1,214 @@
+{
+  "file": "kawaii.mp3",
+  "duration": 163.2,
+  "effectiveEndTime": 161.486,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.036373,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 120.5,
+  "tempoCandidates": [
+    {
+      "bpm": 120.5,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 120.75,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 121,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 121.25,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 121.5,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 121.75,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 122,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 122.25,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 122.5,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 122.75,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 123,
+      "score": 0.0002622
+    },
+    {
+      "bpm": 123.25,
+      "score": 0.0002622
+    }
+  ],
+  "beatInterval": 0.49793,
+  "beatOffset": 0.04,
+  "beatCount": 328,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 159.376,
+      "end": 163.2
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.04,
+      "end": 8.007,
+      "energy": 0.08861,
+      "label": "intro"
+    },
+    {
+      "start": 8.007,
+      "end": 15.974,
+      "energy": 0.10267,
+      "label": "main"
+    },
+    {
+      "start": 15.974,
+      "end": 23.94,
+      "energy": 0.1332,
+      "label": "main"
+    },
+    {
+      "start": 23.94,
+      "end": 31.907,
+      "energy": 0.1352,
+      "label": "main"
+    },
+    {
+      "start": 31.907,
+      "end": 39.874,
+      "energy": 0.13661,
+      "label": "main"
+    },
+    {
+      "start": 39.874,
+      "end": 47.841,
+      "energy": 0.15536,
+      "label": "main"
+    },
+    {
+      "start": 47.841,
+      "end": 55.808,
+      "energy": 0.23498,
+      "label": "high-energy"
+    },
+    {
+      "start": 55.808,
+      "end": 63.774,
+      "energy": 0.20156,
+      "label": "high-energy"
+    },
+    {
+      "start": 63.774,
+      "end": 71.741,
+      "energy": 0.24006,
+      "label": "high-energy"
+    },
+    {
+      "start": 71.741,
+      "end": 79.708,
+      "energy": 0.17868,
+      "label": "main"
+    },
+    {
+      "start": 79.708,
+      "end": 87.675,
+      "energy": 0.13153,
+      "label": "main"
+    },
+    {
+      "start": 87.675,
+      "end": 95.642,
+      "energy": 0.1419,
+      "label": "main"
+    },
+    {
+      "start": 95.642,
+      "end": 103.608,
+      "energy": 0.1499,
+      "label": "main"
+    },
+    {
+      "start": 103.608,
+      "end": 111.575,
+      "energy": 0.11757,
+      "label": "main"
+    },
+    {
+      "start": 111.575,
+      "end": 119.542,
+      "energy": 0.19165,
+      "label": "main"
+    },
+    {
+      "start": 119.542,
+      "end": 127.509,
+      "energy": 0.20266,
+      "label": "high-energy"
+    },
+    {
+      "start": 127.509,
+      "end": 135.476,
+      "energy": 0.2214,
+      "label": "high-energy"
+    },
+    {
+      "start": 135.476,
+      "end": 143.442,
+      "energy": 0.19722,
+      "label": "main"
+    },
+    {
+      "start": 143.442,
+      "end": 151.409,
+      "energy": 0.22489,
+      "label": "high-energy"
+    },
+    {
+      "start": 151.409,
+      "end": 159.376,
+      "energy": 0.1884,
+      "label": "main"
+    },
+    {
+      "start": 159.376,
+      "end": 163.2,
+      "energy": 0.02644,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 255,
+    "normal": 488,
+    "hard": 658
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "kawaii-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

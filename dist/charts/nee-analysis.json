@@ -1,0 +1,262 @@
+{
+  "file": "nee.mp3",
+  "duration": 187.92,
+  "effectiveEndTime": 182.337,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.025366,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 148,
+  "tempoCandidates": [
+    {
+      "bpm": 148,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 148.25,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 148.5,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 148.75,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 149,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 149.25,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 149.5,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 149.75,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 150,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 150.25,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 150.5,
+      "score": 0.00020118
+    },
+    {
+      "bpm": 150.75,
+      "score": 0.00020118
+    }
+  ],
+  "beatInterval": 0.40541,
+  "beatOffset": 0.275,
+  "beatCount": 463,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 181.897,
+      "end": 187.92
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.275,
+      "end": 6.761,
+      "energy": 0.05552,
+      "label": "intro"
+    },
+    {
+      "start": 6.761,
+      "end": 13.248,
+      "energy": 0.09236,
+      "label": "main"
+    },
+    {
+      "start": 13.248,
+      "end": 19.734,
+      "energy": 0.09376,
+      "label": "main"
+    },
+    {
+      "start": 19.734,
+      "end": 26.221,
+      "energy": 0.10132,
+      "label": "main"
+    },
+    {
+      "start": 26.221,
+      "end": 32.707,
+      "energy": 0.12711,
+      "label": "main"
+    },
+    {
+      "start": 32.707,
+      "end": 39.194,
+      "energy": 0.14562,
+      "label": "high-energy"
+    },
+    {
+      "start": 39.194,
+      "end": 45.68,
+      "energy": 0.14402,
+      "label": "high-energy"
+    },
+    {
+      "start": 45.68,
+      "end": 52.167,
+      "energy": 0.13179,
+      "label": "main"
+    },
+    {
+      "start": 52.167,
+      "end": 58.653,
+      "energy": 0.12292,
+      "label": "main"
+    },
+    {
+      "start": 58.653,
+      "end": 65.14,
+      "energy": 0.13595,
+      "label": "main"
+    },
+    {
+      "start": 65.14,
+      "end": 71.626,
+      "energy": 0.13546,
+      "label": "main"
+    },
+    {
+      "start": 71.626,
+      "end": 78.113,
+      "energy": 0.13582,
+      "label": "main"
+    },
+    {
+      "start": 78.113,
+      "end": 84.599,
+      "energy": 0.1231,
+      "label": "main"
+    },
+    {
+      "start": 84.599,
+      "end": 91.086,
+      "energy": 0.13014,
+      "label": "main"
+    },
+    {
+      "start": 91.086,
+      "end": 97.572,
+      "energy": 0.12576,
+      "label": "main"
+    },
+    {
+      "start": 97.572,
+      "end": 104.059,
+      "energy": 0.1377,
+      "label": "main"
+    },
+    {
+      "start": 104.059,
+      "end": 110.545,
+      "energy": 0.14173,
+      "label": "high-energy"
+    },
+    {
+      "start": 110.545,
+      "end": 117.032,
+      "energy": 0.16035,
+      "label": "high-energy"
+    },
+    {
+      "start": 117.032,
+      "end": 123.518,
+      "energy": 0.16242,
+      "label": "high-energy"
+    },
+    {
+      "start": 123.518,
+      "end": 130.005,
+      "energy": 0.14817,
+      "label": "high-energy"
+    },
+    {
+      "start": 130.005,
+      "end": 136.491,
+      "energy": 0.131,
+      "label": "main"
+    },
+    {
+      "start": 136.491,
+      "end": 142.978,
+      "energy": 0.14243,
+      "label": "high-energy"
+    },
+    {
+      "start": 142.978,
+      "end": 149.464,
+      "energy": 0.14194,
+      "label": "high-energy"
+    },
+    {
+      "start": 149.464,
+      "end": 155.951,
+      "energy": 0.13779,
+      "label": "high-energy"
+    },
+    {
+      "start": 155.951,
+      "end": 162.437,
+      "energy": 0.05771,
+      "label": "main"
+    },
+    {
+      "start": 162.437,
+      "end": 168.924,
+      "energy": 0.05424,
+      "label": "main"
+    },
+    {
+      "start": 168.924,
+      "end": 175.41,
+      "energy": 0.0552,
+      "label": "main"
+    },
+    {
+      "start": 175.41,
+      "end": 181.897,
+      "energy": 0.06488,
+      "label": "main"
+    },
+    {
+      "start": 181.897,
+      "end": 187.92,
+      "energy": 0.00381,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 348,
+    "normal": 653,
+    "hard": 921
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "nee-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

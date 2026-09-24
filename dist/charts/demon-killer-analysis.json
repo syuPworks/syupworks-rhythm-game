@@ -1,0 +1,218 @@
+{
+  "file": "demon-killer.mp3",
+  "duration": 110.24,
+  "effectiveEndTime": 104.773,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.028988,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 178.75,
+  "tempoCandidates": [
+    {
+      "bpm": 178.75,
+      "score": 0.00042835
+    },
+    {
+      "bpm": 179,
+      "score": 0.00042835
+    },
+    {
+      "bpm": 179.25,
+      "score": 0.00042835
+    },
+    {
+      "bpm": 179.5,
+      "score": 0.00042835
+    },
+    {
+      "bpm": 179.75,
+      "score": 0.00042835
+    },
+    {
+      "bpm": 180,
+      "score": 0.00042835
+    },
+    {
+      "bpm": 91,
+      "score": 0.00038379
+    },
+    {
+      "bpm": 91.25,
+      "score": 0.00038379
+    },
+    {
+      "bpm": 91.5,
+      "score": 0.00038379
+    },
+    {
+      "bpm": 91.75,
+      "score": 0.00038379
+    },
+    {
+      "bpm": 92,
+      "score": 0.00038379
+    },
+    {
+      "bpm": 92.25,
+      "score": 0.00038379
+    }
+  ],
+  "beatInterval": 0.33566,
+  "beatOffset": 0.055,
+  "beatCount": 329,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 102.097,
+      "end": 107.468
+    },
+    {
+      "start": 107.468,
+      "end": 110.24
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.055,
+      "end": 5.426,
+      "energy": 0.12724,
+      "label": "intro"
+    },
+    {
+      "start": 5.426,
+      "end": 10.796,
+      "energy": 0.14228,
+      "label": "main"
+    },
+    {
+      "start": 10.796,
+      "end": 16.167,
+      "energy": 0.13562,
+      "label": "main"
+    },
+    {
+      "start": 16.167,
+      "end": 21.538,
+      "energy": 0.13592,
+      "label": "main"
+    },
+    {
+      "start": 21.538,
+      "end": 26.908,
+      "energy": 0.14134,
+      "label": "main"
+    },
+    {
+      "start": 26.908,
+      "end": 32.279,
+      "energy": 0.14511,
+      "label": "main"
+    },
+    {
+      "start": 32.279,
+      "end": 37.649,
+      "energy": 0.15619,
+      "label": "high-energy"
+    },
+    {
+      "start": 37.649,
+      "end": 43.02,
+      "energy": 0.14752,
+      "label": "main"
+    },
+    {
+      "start": 43.02,
+      "end": 48.391,
+      "energy": 0.15071,
+      "label": "main"
+    },
+    {
+      "start": 48.391,
+      "end": 53.761,
+      "energy": 0.16019,
+      "label": "high-energy"
+    },
+    {
+      "start": 53.761,
+      "end": 59.132,
+      "energy": 0.16686,
+      "label": "high-energy"
+    },
+    {
+      "start": 59.132,
+      "end": 64.503,
+      "energy": 0.14204,
+      "label": "main"
+    },
+    {
+      "start": 64.503,
+      "end": 69.873,
+      "energy": 0.15282,
+      "label": "high-energy"
+    },
+    {
+      "start": 69.873,
+      "end": 75.244,
+      "energy": 0.1514,
+      "label": "high-energy"
+    },
+    {
+      "start": 75.244,
+      "end": 80.614,
+      "energy": 0.1514,
+      "label": "high-energy"
+    },
+    {
+      "start": 80.614,
+      "end": 85.985,
+      "energy": 0.14965,
+      "label": "main"
+    },
+    {
+      "start": 85.985,
+      "end": 91.356,
+      "energy": 0.15293,
+      "label": "high-energy"
+    },
+    {
+      "start": 91.356,
+      "end": 96.726,
+      "energy": 0.09576,
+      "label": "main"
+    },
+    {
+      "start": 96.726,
+      "end": 102.097,
+      "energy": 0.07092,
+      "label": "main"
+    },
+    {
+      "start": 102.097,
+      "end": 107.468,
+      "energy": 0.0288,
+      "label": "break"
+    },
+    {
+      "start": 107.468,
+      "end": 110.24,
+      "energy": 0.00022,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 248,
+    "normal": 488,
+    "hard": 655
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "demon-killer-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

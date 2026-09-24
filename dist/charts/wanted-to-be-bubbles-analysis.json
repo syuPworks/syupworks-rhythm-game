@@ -1,0 +1,274 @@
+{
+  "file": "wanted-to-be-bubbles.mp3",
+  "duration": 246.76,
+  "effectiveEndTime": 241.107,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.022793,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 120.5,
+  "tempoCandidates": [
+    {
+      "bpm": 120.5,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 120.75,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 121,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 121.25,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 121.5,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 121.75,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 122,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 122.25,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 122.5,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 122.75,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 123,
+      "score": 0.00012564
+    },
+    {
+      "bpm": 123.25,
+      "score": 0.00012564
+    }
+  ],
+  "beatInterval": 0.49793,
+  "beatOffset": 0.135,
+  "beatCount": 496,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 239.139,
+      "end": 246.76
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.135,
+      "end": 8.102,
+      "energy": 0.06914,
+      "label": "intro"
+    },
+    {
+      "start": 8.102,
+      "end": 16.069,
+      "energy": 0.05007,
+      "label": "main"
+    },
+    {
+      "start": 16.069,
+      "end": 24.035,
+      "energy": 0.0475,
+      "label": "main"
+    },
+    {
+      "start": 24.035,
+      "end": 32.002,
+      "energy": 0.08053,
+      "label": "main"
+    },
+    {
+      "start": 32.002,
+      "end": 39.969,
+      "energy": 0.05291,
+      "label": "main"
+    },
+    {
+      "start": 39.969,
+      "end": 47.936,
+      "energy": 0.07326,
+      "label": "main"
+    },
+    {
+      "start": 47.936,
+      "end": 55.903,
+      "energy": 0.10093,
+      "label": "main"
+    },
+    {
+      "start": 55.903,
+      "end": 63.869,
+      "energy": 0.09295,
+      "label": "main"
+    },
+    {
+      "start": 63.869,
+      "end": 71.836,
+      "energy": 0.13174,
+      "label": "main"
+    },
+    {
+      "start": 71.836,
+      "end": 79.803,
+      "energy": 0.14644,
+      "label": "high-energy"
+    },
+    {
+      "start": 79.803,
+      "end": 87.77,
+      "energy": 0.15303,
+      "label": "high-energy"
+    },
+    {
+      "start": 87.77,
+      "end": 95.737,
+      "energy": 0.13215,
+      "label": "main"
+    },
+    {
+      "start": 95.737,
+      "end": 103.703,
+      "energy": 0.11981,
+      "label": "main"
+    },
+    {
+      "start": 103.703,
+      "end": 111.67,
+      "energy": 0.07246,
+      "label": "main"
+    },
+    {
+      "start": 111.67,
+      "end": 119.637,
+      "energy": 0.07448,
+      "label": "main"
+    },
+    {
+      "start": 119.637,
+      "end": 127.604,
+      "energy": 0.13308,
+      "label": "main"
+    },
+    {
+      "start": 127.604,
+      "end": 135.571,
+      "energy": 0.12698,
+      "label": "main"
+    },
+    {
+      "start": 135.571,
+      "end": 143.537,
+      "energy": 0.13388,
+      "label": "high-energy"
+    },
+    {
+      "start": 143.537,
+      "end": 151.504,
+      "energy": 0.11571,
+      "label": "main"
+    },
+    {
+      "start": 151.504,
+      "end": 159.471,
+      "energy": 0.13965,
+      "label": "high-energy"
+    },
+    {
+      "start": 159.471,
+      "end": 167.438,
+      "energy": 0.13363,
+      "label": "high-energy"
+    },
+    {
+      "start": 167.438,
+      "end": 175.405,
+      "energy": 0.13795,
+      "label": "high-energy"
+    },
+    {
+      "start": 175.405,
+      "end": 183.372,
+      "energy": 0.11543,
+      "label": "main"
+    },
+    {
+      "start": 183.372,
+      "end": 191.338,
+      "energy": 0.05782,
+      "label": "main"
+    },
+    {
+      "start": 191.338,
+      "end": 199.305,
+      "energy": 0.07665,
+      "label": "main"
+    },
+    {
+      "start": 199.305,
+      "end": 207.272,
+      "energy": 0.13312,
+      "label": "main"
+    },
+    {
+      "start": 207.272,
+      "end": 215.239,
+      "energy": 0.14313,
+      "label": "high-energy"
+    },
+    {
+      "start": 215.239,
+      "end": 223.206,
+      "energy": 0.1476,
+      "label": "high-energy"
+    },
+    {
+      "start": 223.206,
+      "end": 231.172,
+      "energy": 0.13539,
+      "label": "high-energy"
+    },
+    {
+      "start": 231.172,
+      "end": 239.139,
+      "energy": 0.075,
+      "label": "main"
+    },
+    {
+      "start": 239.139,
+      "end": 246.76,
+      "energy": 0.00697,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 358,
+    "normal": 674,
+    "hard": 944
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "wanted-to-be-bubbles-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}

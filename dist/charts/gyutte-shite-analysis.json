@@ -1,0 +1,190 @@
+{
+  "file": "gyutte-shite.mp3",
+  "duration": 181.24,
+  "effectiveEndTime": 178.622,
+  "tailQuietSeconds": 1.5,
+  "tailQuietThreshold": 0.03449,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "bits": 32,
+    "encoding": "float PCM decoded from MP3"
+  },
+  "estimatedBpm": 88,
+  "tempoCandidates": [
+    {
+      "bpm": 88,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 88.25,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 88.5,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 88.75,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 89,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 89.25,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 89.5,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 89.75,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 90,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 90.25,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 90.5,
+      "score": 0.00020045
+    },
+    {
+      "bpm": 90.75,
+      "score": 0.00020045
+    }
+  ],
+  "beatInterval": 0.68182,
+  "beatOffset": 0.65,
+  "beatCount": 265,
+  "onsetMethod": "RMS energy flux with autocorrelation and phase alignment",
+  "silenceOrBreaks": [
+    {
+      "start": 175.195,
+      "end": 181.24
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.65,
+      "end": 11.559,
+      "energy": 0.1211,
+      "label": "intro"
+    },
+    {
+      "start": 11.559,
+      "end": 22.468,
+      "energy": 0.13358,
+      "label": "main"
+    },
+    {
+      "start": 22.468,
+      "end": 33.377,
+      "energy": 0.13328,
+      "label": "main"
+    },
+    {
+      "start": 33.377,
+      "end": 44.286,
+      "energy": 0.13955,
+      "label": "main"
+    },
+    {
+      "start": 44.286,
+      "end": 55.195,
+      "energy": 0.1268,
+      "label": "main"
+    },
+    {
+      "start": 55.195,
+      "end": 66.105,
+      "energy": 0.14906,
+      "label": "main"
+    },
+    {
+      "start": 66.105,
+      "end": 77.014,
+      "energy": 0.17384,
+      "label": "main"
+    },
+    {
+      "start": 77.014,
+      "end": 87.923,
+      "energy": 0.18962,
+      "label": "high-energy"
+    },
+    {
+      "start": 87.923,
+      "end": 98.832,
+      "energy": 0.19391,
+      "label": "high-energy"
+    },
+    {
+      "start": 98.832,
+      "end": 109.741,
+      "energy": 0.15656,
+      "label": "main"
+    },
+    {
+      "start": 109.741,
+      "end": 120.65,
+      "energy": 0.12908,
+      "label": "main"
+    },
+    {
+      "start": 120.65,
+      "end": 131.559,
+      "energy": 0.15541,
+      "label": "main"
+    },
+    {
+      "start": 131.559,
+      "end": 142.468,
+      "energy": 0.18257,
+      "label": "main"
+    },
+    {
+      "start": 142.468,
+      "end": 153.377,
+      "energy": 0.19156,
+      "label": "high-energy"
+    },
+    {
+      "start": 153.377,
+      "end": 164.286,
+      "energy": 0.2129,
+      "label": "high-energy"
+    },
+    {
+      "start": 164.286,
+      "end": 175.195,
+      "energy": 0.18788,
+      "label": "high-energy"
+    },
+    {
+      "start": 175.195,
+      "end": 181.24,
+      "energy": 0.04182,
+      "label": "break"
+    }
+  ],
+  "charts": {
+    "easy": 202,
+    "normal": 373,
+    "hard": 531
+  },
+  "arrangement": {
+    "generator": "phrase-pattern-v1",
+    "seed": "gyutte-shite-audio-analysis",
+    "startTime": 5,
+    "phraseBeats": 4,
+    "noteTimes": "beat grid with analyzed onset/energy subdivisions; lanes assigned by varied phrase patterns"
+  }
+}
