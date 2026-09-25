@@ -153,6 +153,7 @@ body.promo-mode .promo-badge span{font-size:clamp(8px,1.2vh,14px);opacity:.65}
 .song-cards::-webkit-scrollbar{display:none}
 .song-card,.song-card.locked{flex:0 0 var(--song-card-size);width:var(--song-card-size);scroll-snap-align:center}
 /* BONUS TRACK: one compact layout for every phone-width viewport, including WebViews. */
+#bonus-screen.active{touch-action:manipulation}
 @media (max-width:700px){
   #bonus-screen.active{height:100dvh;max-height:100dvh;min-height:0;padding:calc(env(safe-area-inset-top,0px) + 8px) 12px calc(env(safe-area-inset-bottom,0px) + 8px)}
   #bonus-screen .eyebrow{font-size:.62rem}
