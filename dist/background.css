@@ -153,29 +153,29 @@ body.promo-mode .promo-badge span{font-size:clamp(8px,1.2vh,14px);opacity:.65}
 .song-card,.song-card.locked{flex:0 0 var(--song-card-size);width:var(--song-card-size);scroll-snap-align:center}
 /* BONUS TRACK: one compact layout for every phone-width viewport, including WebViews. */
 @media (max-width:700px){
-  #bonus-screen.active{height:100dvh;max-height:100dvh;min-height:0;padding:calc(env(safe-area-inset-top,0px) + 12px) 12px calc(env(safe-area-inset-bottom,0px) + 12px)}
+  #bonus-screen.active{height:100dvh;max-height:100dvh;min-height:0;padding:calc(env(safe-area-inset-top,0px) + 8px) 12px calc(env(safe-area-inset-bottom,0px) + 8px)}
   #bonus-screen .eyebrow{font-size:.62rem}
-  .bonus-song-nav{height:2.9rem;margin:4px 0 7px;gap:7px}
+  .bonus-song-nav{height:2.55rem;margin:2px 0 5px;gap:7px}
   .bonus-song-nav h1{font-size:1.18rem}
-  .bonus-song-nav button{width:38px;height:38px;font-size:1.12rem}
-  .bonus-jacket,.bonus-secret-jacket{width:min(116px,30vw);height:min(116px,30vw);margin-bottom:7px}
-  .bonus-song-meta{height:52px;min-height:52px;margin-bottom:9px}
+  .bonus-song-nav button{width:34px;height:34px;font-size:1.04rem}
+  .bonus-jacket,.bonus-secret-jacket{width:min(108px,29vw);height:min(108px,29vw);margin-bottom:5px}
+  .bonus-song-meta{height:46px;min-height:46px;margin-bottom:6px}
   .bonus-song-meta p{font-size:.73rem}
   .bonus-song-meta p:first-child{font-size:.6rem}
-  .bonus-song-meta #bonus-description{height:34px;font-size:.7rem;line-height:1.35}
-  .bonus-records{gap:7px}
-  .bonus-record{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;min-height:0;padding:9px 11px}
-  .bonus-record h2{margin:0;font-size:.86rem}
+  .bonus-song-meta #bonus-description{height:30px;font-size:.69rem;line-height:1.3}
+  .bonus-records{gap:5px}
+  .bonus-record{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;min-height:0;padding:6px 11px}
+  .bonus-record h2{margin:0;font-size:.84rem}
   .bonus-record strong{margin:1px 0 0;font-size:.6rem;white-space:nowrap}
-  .bonus-record dl{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px 5px;margin-top:6px}
+  .bonus-record dl{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px 5px;margin-top:4px}
   .bonus-record dl div{display:grid;grid-template-rows:auto auto;align-content:start;gap:2px;min-width:0}
   .bonus-record dl div:nth-child(1),.bonus-record dl div:nth-child(2){grid-column:span 3}
   .bonus-record dl div:nth-child(n+3){grid-column:span 2}
   .bonus-record dt{font-size:.51rem;letter-spacing:.04em;white-space:nowrap}
   .bonus-record dd{font-size:.71rem;letter-spacing:0;white-space:nowrap}
   .bonus-record dl div:first-child dd{font-size:.62rem}
-  .bonus-help{margin:8px 0 0;font-size:.7rem}
-  #bonus-title-button{min-width:min(210px,70vw);margin-top:7px;padding:8px 14px;font-size:.78rem}
+  .bonus-help{margin:5px 0 0;font-size:.7rem}
+  #bonus-title-button{min-width:min(210px,70vw);margin-top:4px;padding:6px 14px;font-size:.78rem}
 }
 
 /* Touch devices: a compact, safe-area-aware pause control above the play board. */
