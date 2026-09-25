@@ -1,4 +1,5 @@
 @import url("svg-board.css");
+#perspective-board{position:absolute;z-index:1;inset:0;width:100%;height:100%;pointer-events:none}.lanes{position:absolute;z-index:2;inset:0}.perspective-lane{fill:#75e6da0a}.perspective-line{stroke:#a9ddff44;vector-effect:non-scaling-stroke}.perspective-key-button{fill:#081128f8;stroke:#75e6da88;vector-effect:non-scaling-stroke}.perspective-key{fill:#dffffa;font:700 5px system-ui,sans-serif;text-anchor:middle;dominant-baseline:middle}.perspective-key.pressed{fill:#fff;filter:drop-shadow(0 0 2px #75e6da)}
 body { background: radial-gradient(circle at 8% 8%, #263f69 0, transparent 30%), radial-gradient(circle at 95% 90%, #46234c 0, transparent 35%), #070b19; }
 #pause-ui button.pause-selected { background:#75e6da !important; color:#06121c !important; border-color:#dffffa !important; box-shadow:0 0 20px #75e6da; transform:scale(1.05); }
 #pause-ui #pause-continue { background:#75e6da; color:#06121c; border-color:#dffffa; box-shadow:0 0 20px #75e6da; transform:scale(1.05); }
@@ -179,7 +180,7 @@ body.promo-mode .promo-badge span{font-size:clamp(8px,1.2vh,14px);opacity:.65}
 }
 
 /* Touch devices: a compact, safe-area-aware pause control above the play board. */
-#play-screen.active #game{touch-action:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+#play-screen.active #game{touch-action:none}
 #mobile-pause-button{display:none}
 @media (pointer:coarse){
   #play-screen.active #mobile-pause-button{position:fixed;z-index:40;top:calc(env(safe-area-inset-top,0px) + 10px);right:calc(env(safe-area-inset-right,0px) + 10px);display:grid;place-items:center;width:50px;height:50px;padding:0;border:1px solid #75e6dab8;border-radius:50%;background:#06101bc9;color:#75e6da;font:700 1.25rem/1 system-ui,sans-serif;box-shadow:0 0 18px #75e6da55;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
