@@ -1,8 +1,215 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>syuP音ゲー</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="background.css"></head><body>
-<section id="intro-screen" class="screen intro-screen" hidden><img src="backgrounds/syupworks-logo.png" alt="syuPworks"></section>
-<section id="title-screen" class="screen title-screen"><h1>syuP音ゲー</h1><img class="title-character" src="title-assets/title-character.png" alt="タイトルキャラクター"><p>syuPworks 2026</p><nav class="title-menu" aria-label="タイトルメニュー"><button id="title-start-button" data-action="title-start">START</button><button id="bonus-track-button" data-action="bonus-track" hidden>BONUS TRACK</button></nav></section>
-<section id="select-screen" class="screen select-screen" hidden><div class="select-backdrop" aria-hidden="true"><img id="select-backdrop-image" alt=""></div><div class="select-content"><header class="select-header"><p class="eyebrow">SELECT MUSIC</p><p class="select-subtitle">CHOOSE YOUR TRACK</p><strong id="select-position"></strong></header><div id="song-cards" class="song-cards"></div><section class="select-song-info"><h1 id="select-title"></h1><p id="select-artist"></p><p id="select-description"></p></section><div id="select-records" class="select-records" aria-label="難易度別プレイ記録"></div><section id="select-preview" class="select-preview" aria-label="プレビュー再生位置"><div class="select-preview-row"><span id="select-preview-current">0:00</span><div class="select-preview-track"><i id="select-preview-fill"></i></div><span id="select-preview-duration">--:--</span></div><small>PREVIEW</small></section><p id="select-help"><span class="select-help-pc">← → 選択　ENTER 決定</span><span class="select-help-touch">TAP TO SELECT</span></p><button id="select-title-button" type="button" data-action="select-title">ESC タイトルへ</button></div></section>
-<section id="difficulty-screen" class="screen difficulty-screen" hidden><p class="eyebrow">SELECT DIFFICULTY</p><h1 id="difficulty-song"></h1><div id="difficulty-list" class="difficulty-list"></div><p>← → / ↑ ↓ 選択　ENTER 決定　ESC 戻る</p></section>
-<section id="bonus-screen" class="screen bonus-screen" hidden><p class="eyebrow">BONUS TRACK</p><div class="bonus-song-nav"><button data-action="bonus-prev" aria-label="前の曲">←</button><h1 id="bonus-song-title"></h1><button data-action="bonus-next" aria-label="次の曲">→</button></div><img id="bonus-jacket" class="bonus-jacket" alt="楽曲ジャケット" hidden><div id="bonus-secret-jacket" class="bonus-secret-jacket" hidden aria-label="未発見の楽曲"><b>?</b><small>SECRET TRACK</small></div><div id="bonus-song-meta" class="bonus-song-meta"><p>ARTIST <b id="bonus-artist"></b>　GENRE <b id="bonus-genre"></b></p><p id="bonus-description"></p></div><div id="bonus-records" class="bonus-records"></div><p class="bonus-help">← → 曲切替</p><button id="bonus-title-button" type="button" data-action="bonus-title">ESC タイトルへ</button></section>
-<main id="play-screen" class="app showcase" hidden><div id="promo-badge" class="promo-badge" hidden><b>syuPworks</b><span>RHYTHM GAME</span></div><aside class="work-panel"><div id="background-layer" class="media-frame"><img id="background-image" alt="作品アートワーク" hidden><video id="background-video" muted loop playsinline hidden></video><div id="media-fallback" class="media-fallback"><span>♪</span><small>NO MEDIA</small></div><div class="media-overlay"></div></div><div class="work-copy"><p class="eyebrow">FEATURED WORK</p><h1 id="work-title"></h1><p id="work-description" class="description"></p><dl class="metadata"><div><dt>ARTIST</dt><dd id="work-artist"></dd></div><div><dt>GENRE</dt><dd id="work-genre"></dd></div><div><dt>TEMPO</dt><dd id="work-bpm"></dd></div><div><dt>FORMAT</dt><dd>4 KEYS</dd></div></dl></div></aside><section class="game-panel"><header class="game-header"><div><p class="eyebrow">RHYTHM PLAY</p><h2 id="difficulty">EASY</h2></div><div id="status" hidden></div></header><section class="hud"><span>SCORE <b id="score">0000000</b></span><span class="hp-widget" id="hp-widget">HP <b id="hp-value">100</b><span class="hp-track"><i id="hp-fill"></i></span><span id="hp-recover" class="hp-recover" hidden></span></span><span>COMBO <b id="combo">0</b></span></section><section id="game" class="game"><div id="judgement" class="judgement"></div><div id="countdown" class="countdown" hidden aria-live="polite"></div><div class="lanes" id="lanes"><i></i><i></i><i></i><i></i></div><div class="judge-line"></div><div class="keys"><span>A</span><span>S</span><span>D</span><span>F</span></div></section></section><button id="mobile-pause-button" type="button" data-action="mobile-pause" aria-label="一時停止"><span aria-hidden="true">Ⅱ</span></button></main>
-<section id="result-screen" class="screen result-screen" hidden><div class="result-panel"><header class="result-heading"><p class="result-eyebrow">RESULT</p><h1 id="result-kind"></h1></header><div class="result-hero"><img id="result-jacket" alt="楽曲ジャケット"><div class="result-hero-details"><div class="result-song-copy"><h2 id="result-title"></h2><p id="result-artist"></p><p id="result-difficulty"></p></div><div class="result-metrics"><div class="result-score-card"><span>SCORE</span><strong id="result-score"></strong><p id="result-auto" hidden>AUTO PLAY</p></div><div class="result-rate-card"><span>RATE</span><strong id="result-rate"></strong></div></div></div></div><section class="result-log-section" aria-label="SONG PLAY LOG"><h2>SONG PLAY LOG</h2><div id="result-log-track" class="result-log-track"></div><div class="result-log-times"><span>0:00</span><span id="result-duration"></span></div><div class="result-log-legend"><span class="perfect">PERFECT</span><span class="great">GREAT</span><span class="good">GOOD</span><span class="miss">MISS</span><span class="combo">COMBO</span></div></section><div class="result-summary"><section class="result-judgements" aria-label="判定結果"><div><span>PERFECT</span><strong id="result-perfect"></strong></div><div><span>GREAT</span><strong id="result-great"></strong></div><div><span>GOOD</span><strong id="result-good"></strong></div><div><span>MISS</span><strong id="result-miss"></strong></div><div><span>MAX COMBO</span><strong id="result-max-combo"></strong></div><div><span>PLAY TIME</span><strong id="result-play-time"></strong></div></section><section class="result-comment" aria-label="プレイコメント"><h2>COMMENT</h2><p id="result-comment"></p></section></div><nav class="result-actions" aria-label="リザルト操作"><button type="button" data-action="result-retry">RETRY</button><button type="button" data-action="result-select">SONG SELECT</button><button type="button" data-action="result-home">HOME</button></nav><p class="result-footer">syuPworks Rhythm Game</p></div></section><section id="gameover-screen" class="screen gameover-screen" hidden><p>FAILED</p><h1>GAME OVER</h1><button data-action="gameover-title">PRESS ENTER</button></section><audio id="audio" preload="auto"></audio><audio id="preview" preload="none" loop></audio><script src="game.js"></script></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b19">
+<title>syuP音ゲー Ver.2</title>
+<meta name="application-version" content="syuP音ゲー Ver.2">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ambient" class="ambient" aria-hidden="true"><img id="ambient-image" alt=""><img id="ambient-a" class="sharp" alt=""><img id="ambient-b" class="sharp" alt=""></div>
+<div id="syup-badge" class="syup-badge" hidden>syuP MODE</div>
+
+<section id="intro-screen" class="screen intro-screen" hidden>
+  <img src="backgrounds/syupworks-logo.png" alt="syuPworks">
+</section>
+
+<section id="title-screen" class="screen title-screen" hidden>
+  <div class="title-notes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <h1 class="title-logo">syuP<span>音ゲー</span></h1>
+  <img class="title-character" src="title-assets/title-character.png" alt="タイトルキャラクター">
+  <nav class="menu title-menu" aria-label="タイトルメニュー">
+    <button type="button" data-action="title-start">START</button>
+    <button type="button" data-action="title-bonus" id="title-bonus" hidden>BONUS TRACK</button>
+    <button type="button" data-action="title-options">OPTIONS</button>
+  </nav>
+  <p class="title-foot">syuPworks 2026 <span class="version-tag">Ver.2</span></p>
+  <p class="hint"><span class="pc-only">↑↓ 選択　ENTER 決定</span><span class="touch-only">TAP TO SELECT</span></p>
+</section>
+
+<section id="select-screen" class="screen select-screen" hidden>
+  <header class="screen-head">
+    <button type="button" class="back" data-action="select-back" aria-label="タイトルへ戻る">‹ TITLE</button>
+    <p class="eyebrow">SELECT MUSIC</p>
+    <button type="button" class="ghost" data-action="open-options">OPTIONS</button>
+  </header>
+  <div class="select-body">
+    <div class="select-carousel">
+      <button type="button" class="carousel-arrow" data-action="song-prev" aria-label="前の曲">‹</button>
+      <div id="song-cards" class="song-cards"></div>
+      <button type="button" class="carousel-arrow" data-action="song-next" aria-label="次の曲">›</button>
+    </div>
+    <div class="select-detail">
+      <p id="select-position" class="select-position"></p>
+      <h1 id="select-title"></h1>
+      <p id="select-meta" class="select-meta"></p>
+      <p id="select-description" class="select-description"></p>
+      <div id="difficulty-tabs" class="difficulty-tabs" role="radiogroup" aria-label="難易度"></div>
+      <div class="select-actions">
+        <button type="button" id="autoplay-toggle" class="toggle" data-action="toggle-autoplay" aria-pressed="false">AUTO <b>OFF</b></button>
+        <button type="button" id="start-button" class="primary" data-action="start">PLAY</button>
+      </div>
+      <div class="chart-graph" aria-hidden="true"><canvas id="chart-graph"></canvas><span id="chart-notes"></span></div>
+      <div class="preview-bar" aria-hidden="true"><i id="preview-fill"></i></div>
+    </div>
+  </div>
+  <p class="hint"><span class="pc-only">← → 曲　↑ ↓ 難易度　ENTER プレイ　TAB オート　ESC 戻る</span><span class="touch-only">ジャケットをタップで曲を選択</span></p>
+</section>
+
+<section id="options-screen" class="screen options-screen" hidden>
+  <header class="screen-head">
+    <button type="button" class="back" data-action="options-back" aria-label="戻る">‹ BACK</button>
+    <p class="eyebrow">OPTIONS</p>
+    <span></span>
+  </header>
+  <div id="options-list" class="options-list"></div>
+  <p class="version-line">syuP音ゲー Ver.2</p>
+  <p class="hint"><span class="pc-only">↑ ↓ 項目　← → 変更　ENTER 実行　ESC 戻る</span><span class="touch-only">‹ › で変更</span></p>
+</section>
+
+<section id="calibrate-screen" class="screen calibrate-screen" hidden>
+  <header class="screen-head">
+    <button type="button" class="back" data-action="calibrate-back" aria-label="戻る">‹ BACK</button>
+    <p class="eyebrow">TIMING CHECK</p>
+    <span></span>
+  </header>
+  <div class="calibrate-body">
+    <p class="calibrate-lead">クリック音に合わせて、任意のキー（またはタップ）を<b>16回</b>押してください。</p>
+    <div id="calibrate-pulse" class="calibrate-pulse"><span id="calibrate-count">READY</span></div>
+    <p id="calibrate-result" class="calibrate-result">&nbsp;</p>
+    <div class="menu calibrate-actions">
+      <button type="button" data-action="calibrate-start" id="calibrate-start">START</button>
+      <button type="button" data-action="calibrate-apply" id="calibrate-apply" hidden>この値を使う</button>
+    </div>
+  </div>
+</section>
+
+<section id="bonus-screen" class="screen bonus-screen" hidden>
+  <header class="screen-head">
+    <button type="button" class="back" data-action="bonus-back" aria-label="タイトルへ戻る">‹ TITLE</button>
+    <p class="eyebrow">BONUS TRACK</p>
+    <span></span>
+  </header>
+  <div class="bonus-nav">
+    <button type="button" class="carousel-arrow" data-action="bonus-prev" aria-label="前の曲">‹</button>
+    <div class="bonus-head">
+      <img id="bonus-jacket" class="bonus-jacket" alt="楽曲ジャケット" hidden>
+      <div id="bonus-secret" class="bonus-secret" hidden><b>?</b><small>SECRET TRACK</small></div>
+      <h1 id="bonus-title"></h1>
+      <p id="bonus-meta" class="select-meta"></p>
+      <p id="bonus-description" class="select-description"></p>
+    </div>
+    <button type="button" class="carousel-arrow" data-action="bonus-next" aria-label="次の曲">›</button>
+  </div>
+  <div id="bonus-records" class="bonus-records"></div>
+  <p class="hint"><span class="pc-only">← → 曲切替　ESC 戻る</span><span class="touch-only">‹ › で曲切替</span></p>
+</section>
+
+<main id="play-screen" class="play-screen" hidden>
+  <div id="promo-badge" class="promo-badge" hidden><b>syuPworks</b><span>RHYTHM GAME</span></div>
+  <aside class="work-panel">
+    <div class="media-frame"><img id="work-jacket" alt="作品アートワーク"><canvas id="work-canvas" aria-label="演奏で描かれるジャケット" hidden></canvas></div>
+    <div class="work-copy">
+      <p class="eyebrow">FEATURED WORK</p>
+      <h1 id="work-title"></h1>
+      <p id="work-description" class="work-description"></p>
+      <dl class="work-meta">
+        <div><dt>ARTIST</dt><dd id="work-artist"></dd></div>
+        <div><dt>GENRE</dt><dd id="work-genre"></dd></div>
+        <div><dt>TEMPO</dt><dd id="work-bpm"></dd></div>
+        <div><dt>CHART</dt><dd id="work-chart"></dd></div>
+        <div class="work-best"><dt>YOUR BEST</dt><dd id="work-best"></dd></div>
+      </dl>
+    </div>
+  </aside>
+  <section class="stage">
+    <header class="hud">
+      <div class="hud-diff"><b id="hud-difficulty">EASY</b><small id="hud-level"></small></div>
+      <div class="hud-score"><small>SCORE</small><b id="hud-score">0</b></div>
+      <div id="hp-widget" class="hp-widget"><small>HP</small><span class="hp-track"><i id="hp-fill"></i></span><b id="hp-value">100</b></div>
+      <button type="button" id="pause-button" class="pause-button" data-action="pause" aria-label="一時停止">Ⅱ</button>
+    </header>
+    <div id="game" class="game">
+      <canvas id="board" aria-label="プレイフィールド"></canvas>
+      <div id="combo-display" class="combo-display" hidden><b id="combo-number">0</b><span>COMBO</span></div>
+      <div id="judgement" class="judgement"><b></b><small></small></div>
+      <div id="stage-banner" class="stage-banner" hidden></div>
+      <div id="stage-cue" class="stage-cue" aria-live="polite"></div>
+      <div id="chaos-card" class="chaos-card" hidden aria-live="polite"></div>
+      <div id="countdown" class="countdown" hidden aria-live="polite"></div>
+      <div id="pause-menu" class="pause-menu" hidden>
+        <h2>PAUSED</h2>
+        <nav class="menu">
+          <button type="button" data-action="pause-resume">RESUME</button>
+          <button type="button" data-action="pause-retry">RETRY</button>
+          <button type="button" data-action="pause-select">SONG SELECT</button>
+        </nav>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section id="result-screen" class="screen result-screen" hidden>
+  <div class="result-panel">
+    <div class="result-left">
+      <p class="eyebrow">RESULT</p>
+      <h1 id="result-kind" class="result-kind"></h1>
+      <div id="result-stars" class="result-stars" role="img"></div>
+      <div class="result-song">
+        <img id="result-jacket" alt="楽曲ジャケット"><canvas id="result-art" class="result-art" aria-label="あなたの演奏で描かれたジャケット" hidden></canvas>
+        <div>
+          <h2 id="result-title"></h2>
+          <p id="result-difficulty" class="result-difficulty"></p>
+        </div>
+      </div>
+      <div class="result-score-block">
+        <div id="result-rank" class="result-rank"></div>
+        <div class="result-score">
+          <small>SCORE</small>
+          <strong id="result-score"></strong>
+          <p id="result-rate" class="result-rate"></p>
+          <p id="result-best" class="result-best"></p>
+        </div>
+      </div>
+      <div id="result-mode" class="result-mode" hidden></div>
+      <div id="result-unlock" class="result-unlock" hidden></div>
+      <p id="result-auto" class="result-auto" hidden>AUTO PLAY — 記録されません</p>
+    </div>
+    <div class="result-right">
+      <div class="result-judgements">
+        <div class="j-perfect"><span>PERFECT</span><b id="result-perfect"></b></div>
+        <div class="j-great"><span>GREAT</span><b id="result-great"></b></div>
+        <div class="j-good"><span>GOOD</span><b id="result-good"></b></div>
+        <div class="j-miss"><span>MISS</span><b id="result-miss"></b></div>
+        <div class="j-combo"><span>MAX COMBO</span><b id="result-max-combo"></b></div>
+        <div class="j-fastslow"><span><em class="fast">FAST</em> / <em class="slow">SLOW</em></span><b id="result-fastslow"></b></div>
+      </div>
+      <section class="result-graph" aria-label="プレイの推移">
+        <h3>PLAY LOG</h3>
+        <canvas id="result-timeline"></canvas>
+        <div id="result-achievements" class="result-achievements"></div>
+      </section>
+      <section class="result-graph" aria-label="タイミング分布">
+        <h3>TIMING <small id="result-timing-mean"></small></h3>
+        <div id="result-timing-grade" class="timing-grade" hidden></div>
+        <canvas id="result-histogram"></canvas>
+        <p id="result-offset-tip" class="result-offset-tip" hidden></p>
+      </section>
+    </div>
+    <nav class="menu result-actions" aria-label="リザルト操作">
+      <button type="button" data-action="result-retry">RETRY</button>
+      <button type="button" data-action="result-select">SONG SELECT</button>
+      <button type="button" data-action="result-title">TITLE</button>
+    </nav>
+  </div>
+</section>
+
+<div id="toast" class="toast" hidden></div>
+<audio id="audio" preload="auto"></audio>
+<audio id="preview" preload="none"></audio>
+<script src="result-fx.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
