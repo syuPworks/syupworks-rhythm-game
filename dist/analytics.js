@@ -4,16 +4,37 @@
 // Sent: page_view (on load), song_select (song select screen opened), play_start, song_clear.
 // No personal data: no player name, no save contents — song title, difficulty, play mode and clear type only.
 // Off everywhere except https://syupworks.github.io (local / LAN dev servers, file:, previews send nothing).
+// Consent: the site has no consent banner, so in regions that need opt-in consent for analytics cookies
+// (EEA, UK, Switzerland) nothing is measured at all — gtag.js is not even loaded. The region is taken from the
+// browser time zone; an unknown / UTC time zone also counts as "needs consent". As a second layer, Consent Mode
+// defaults every storage to denied for those regions (Google decides by IP), and ad storage is denied everywhere.
+// Global Privacy Control / Do Not Track also switch measurement off.
 (() => {
   'use strict';
   const MEASUREMENT_ID = 'G-LC3NZYL9ZX';
   if (location.protocol !== 'https:' || location.hostname !== 'syupworks.github.io') return;
   if (window.__syupAnalytics) return;   // never install twice
+
+  const CONSENT_REGIONS = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL',
+    'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH'];
+  const needsConsent = () => {
+    let tz = '';
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch {}
+    if (!tz || /^(Etc\/|UTC$|UCT$|GMT|Universal$|Zulu$|Greenwich$)/.test(tz)) return true;   // unknown → be safe
+    return /^(Europe|Arctic)\//.test(tz)   // all of Europe (also non-EEA countries: stricter than needed)
+      || /^(Asia\/(Nicosia|Famagusta)|Atlantic\/(Reykjavik|Canary|Madeira|Azores|Faroe|Faeroe|Jan_Mayen)|Africa\/Ceuta|Indian\/(Reunion|Mayotte)|America\/(Guadeloupe|Martinique|Cayenne|Marigot|St_Barthelemy))$/.test(tz)
+      || /^(GB|GB-Eire|Eire|Iceland|Portugal|Poland|CET|EET|WET|MET)$/.test(tz);
+  };
+  const optedOut = () => navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1';
+  if (needsConsent() || optedOut()) return;
   window.__syupAnalytics = true;
 
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
   window.gtag = window.gtag || gtag;
+  // consent defaults must come before config / gtag.js; the region-specific one wins for those regions
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: CONSENT_REGIONS });
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
   const tag = document.createElement('script');
   tag.async = true; tag.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
   document.head.appendChild(tag);
