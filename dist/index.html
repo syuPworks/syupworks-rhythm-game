@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#070b19">
-<title>syuP音ゲー Ver.2</title>
-<meta name="application-version" content="syuP音ゲー Ver.2">
+<title>syuP音ゲー Ver.2.1</title>
+<meta name="application-version" content="syuP音ゲー Ver.2.1">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div id="ambient" class="ambient" aria-hidden="true"><img id="ambient-image" alt=""><img id="ambient-a" class="sharp" alt=""><img id="ambient-b" class="sharp" alt=""></div>
 <div id="syup-badge" class="syup-badge" hidden>syuP MODE</div>
 
@@ -18,100 +19,137 @@
 
 <section id="title-screen" class="screen title-screen" hidden>
   <div class="title-notes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="lang-switch title-lang" role="group" aria-label="Language / 言語"><button type="button" data-lang="ja" lang="ja">日本語</button><button type="button" data-lang="en" lang="en">English</button></div>
   <h1 class="title-logo">syuP<span>音ゲー</span></h1>
-  <img class="title-character" src="title-assets/title-character.png" alt="タイトルキャラクター" draggable="false">
-  <nav class="menu title-menu" aria-label="タイトルメニュー">
+  <img class="title-character" src="title-assets/title-character.png" alt="タイトルキャラクター" data-i18n-alt="titleCharacter" draggable="false">
+  <nav class="menu title-menu" aria-label="タイトルメニュー" data-i18n-aria="titleMenu">
     <button type="button" data-action="title-start">START</button>
     <button type="button" data-action="title-bonus" id="title-bonus" hidden>BONUS TRACK</button>
     <button type="button" data-action="title-options">OPTIONS</button>
+    <button type="button" data-action="title-about">ABOUT</button>
   </nav>
-  <p class="title-foot">syuPworks 2026 <span class="version-tag">Ver.2</span></p>
-  <p class="hint"><span class="pc-only">↑↓ 選択　ENTER 決定</span><span class="touch-only">TAP TO SELECT</span></p>
-  <p class="privacy-note">同意いただいた場合のみ、アクセス解析に Google アナリティクス（Cookie を使用）でプレイ状況を収集します。名前などの個人情報は送信しません。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">Google のデータ取り扱い</a><span class="privacy-ask" hidden><button type="button" data-consent="granted">許可する</button><button type="button" data-consent="denied">許可しない</button></span><span class="privacy-state" hidden><span class="privacy-state-label"></span><button type="button" data-consent="change">変更</button></span></p>
+  <p class="title-foot">syuPworks 2026 <span class="version-tag">Ver.2.1</span></p>
+  <p class="hint"><span class="pc-only" data-i18n="hintTitlePc">↑↓ 選択　ENTER 決定</span><span class="touch-only">TAP TO SELECT</span></p>
+  <p class="privacy-note"><span data-i18n="privacyText">同意いただいた場合のみ、アクセス解析に Google アナリティクス（Cookie を使用）でプレイ状況を収集します。名前などの個人情報は送信しません。</span><a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer" data-i18n="privacyLink" data-i18n-link="privacyHref">Google のデータ取り扱い</a><span class="privacy-ask" hidden><button type="button" data-consent="granted" data-i18n="consentYes">許可する</button><button type="button" data-consent="denied" data-i18n="consentNo">許可しない</button></span><span class="privacy-state" hidden><span class="privacy-state-label"></span><button type="button" data-consent="change" data-i18n="consentChange">変更</button></span></p>
 </section>
 
 <section id="select-screen" class="screen select-screen" hidden>
   <header class="screen-head">
-    <button type="button" class="back" data-action="select-back" aria-label="タイトルへ戻る">‹ TITLE</button>
+    <button type="button" class="back" data-action="select-back" aria-label="タイトルへ戻る" data-i18n-aria="backToTitle">‹ TITLE</button>
     <p class="eyebrow">SELECT MUSIC</p>
-    <button type="button" class="ghost" data-action="open-options">OPTIONS</button>
+    <div class="head-tools">
+      <div class="lang-switch compact" role="group" aria-label="Language / 言語"><button type="button" data-lang="ja" lang="ja">JA</button><button type="button" data-lang="en" lang="en">EN</button></div>
+      <button type="button" class="ghost" data-action="open-options">OPTIONS</button>
+    </div>
   </header>
   <div class="select-body">
     <div class="select-carousel">
-      <button type="button" class="carousel-arrow" data-action="song-prev" aria-label="前の曲">‹</button>
+      <button type="button" class="carousel-arrow" data-action="song-prev" aria-label="前の曲" data-i18n-aria="prevSong">‹</button>
       <div id="song-cards" class="song-cards"></div>
-      <button type="button" class="carousel-arrow" data-action="song-next" aria-label="次の曲">›</button>
+      <button type="button" class="carousel-arrow" data-action="song-next" aria-label="次の曲" data-i18n-aria="nextSong">›</button>
     </div>
     <div class="select-detail">
       <p id="select-position" class="select-position"></p>
       <h1 id="select-title"></h1>
       <p id="select-meta" class="select-meta"></p>
       <p id="select-description" class="select-description"></p>
-      <div id="difficulty-tabs" class="difficulty-tabs" role="radiogroup" aria-label="難易度"></div>
+      <div id="difficulty-tabs" class="difficulty-tabs" role="radiogroup" aria-label="難易度" data-i18n-aria="difficulty"></div>
       <div class="select-actions">
         <button type="button" id="autoplay-toggle" class="toggle" data-action="toggle-autoplay" aria-pressed="false">AUTO <b>OFF</b></button>
         <button type="button" id="start-button" class="primary" data-action="start">PLAY</button>
       </div>
       <div class="chart-graph" aria-hidden="true"><canvas id="chart-graph"></canvas><span id="chart-notes"></span></div>
       <div class="preview-bar" aria-hidden="true"><i id="preview-fill"></i></div>
+      <div id="select-links" class="song-links" hidden></div>
     </div>
   </div>
-  <p class="hint"><span class="pc-only">← → 曲　↑ ↓ 難易度　ENTER プレイ　TAB オート　ESC 戻る</span><span class="touch-only">ジャケットをタップで曲を選択</span></p>
+  <p class="hint"><span class="pc-only" data-i18n="hintSelectPc">← → 曲　↑ ↓ 難易度　ENTER プレイ　TAB オート　ESC 戻る</span><span class="touch-only" data-i18n="hintSelectTouch">ジャケットをタップで曲を選択</span></p>
 </section>
 
 <section id="options-screen" class="screen options-screen" hidden>
   <header class="screen-head">
-    <button type="button" class="back" data-action="options-back" aria-label="戻る">‹ BACK</button>
+    <button type="button" class="back" data-action="options-back" aria-label="戻る" data-i18n-aria="back">‹ BACK</button>
     <p class="eyebrow">OPTIONS</p>
     <span></span>
   </header>
   <div id="options-list" class="options-list"></div>
-  <p class="version-line">syuP音ゲー Ver.2</p>
-  <p class="hint"><span class="pc-only">↑ ↓ 項目　← → 変更　ENTER 実行　ESC 戻る</span><span class="touch-only">‹ › で変更</span></p>
+  <p class="version-line">syuP音ゲー Ver.2.1</p>
+  <p class="hint"><span class="pc-only" data-i18n="hintOptionsPc">↑ ↓ 項目　← → 変更　ENTER 実行　ESC 戻る</span><span class="touch-only" data-i18n="hintOptionsTouch">‹ › で変更</span></p>
+</section>
+
+<section id="about-screen" class="screen about-screen" hidden>
+  <header class="screen-head">
+    <button type="button" class="back" data-action="about-back" aria-label="タイトルへ戻る" data-i18n-aria="backToTitle">‹ TITLE</button>
+    <p class="eyebrow">ABOUT</p>
+    <div class="head-tools"><div class="lang-switch compact" role="group" aria-label="Language / 言語"><button type="button" data-lang="ja" lang="ja">JA</button><button type="button" data-lang="en" lang="en">EN</button></div></div>
+  </header>
+  <div class="about-body">
+    <section class="about-card about-intro">
+      <h1>syuP<span>音ゲー</span> <small class="version-tag">Ver.2.1</small></h1>
+      <p data-i18n="aboutLead">syuPworks の楽曲で遊べる、4レーンのリズムゲームです。PC はキーボード、スマホはタップで遊べます。</p>
+    </section>
+    <section class="about-card about-credits">
+      <h2>CREDITS</h2>
+      <dl>
+        <div><dt>MUSIC</dt><dd>syuP（愁P） / syuPworks</dd></div>
+        <div><dt>GAME</dt><dd>syuPworks</dd></div>
+      </dl>
+    </section>
+    <section class="about-card about-links">
+      <h2>LISTEN / LINKS</h2>
+      <p class="about-note" data-i18n="linksLead">syuP の音楽は各配信サービスでも聴けます。</p>
+      <div id="about-links" class="link-buttons"></div>
+    </section>
+    <section class="about-card about-history">
+      <h2>UPDATE HISTORY</h2>
+      <div id="about-history" class="history-list"><p class="about-note">…</p></div>
+    </section>
+  </div>
+  <p class="hint"><span class="pc-only" data-i18n="hintAboutPc">↑ ↓ スクロール　ESC 戻る</span><span class="touch-only" data-i18n="hintAboutTouch">外部リンクは新しいタブで開きます</span></p>
 </section>
 
 <section id="calibrate-screen" class="screen calibrate-screen" hidden>
   <header class="screen-head">
-    <button type="button" class="back" data-action="calibrate-back" aria-label="戻る">‹ BACK</button>
+    <button type="button" class="back" data-action="calibrate-back" aria-label="戻る" data-i18n-aria="back">‹ BACK</button>
     <p class="eyebrow">TIMING CHECK</p>
     <span></span>
   </header>
   <div class="calibrate-body">
-    <p class="calibrate-lead">クリック音に合わせて、任意のキー（またはタップ）を<b>16回</b>押してください。</p>
+    <p class="calibrate-lead" data-i18n-html="calibrateLead">クリック音に合わせて、任意のキー（またはタップ）を<b>16回</b>押してください。</p>
     <div id="calibrate-pulse" class="calibrate-pulse"><span id="calibrate-count">READY</span></div>
     <p id="calibrate-result" class="calibrate-result">&nbsp;</p>
     <div class="menu calibrate-actions">
       <button type="button" data-action="calibrate-start" id="calibrate-start">START</button>
-      <button type="button" data-action="calibrate-apply" id="calibrate-apply" hidden>この値を使う</button>
+      <button type="button" data-action="calibrate-apply" id="calibrate-apply" data-i18n="calibrateApply" hidden>この値を使う</button>
     </div>
   </div>
 </section>
 
 <section id="bonus-screen" class="screen bonus-screen" hidden>
   <header class="screen-head">
-    <button type="button" class="back" data-action="bonus-back" aria-label="タイトルへ戻る">‹ TITLE</button>
+    <button type="button" class="back" data-action="bonus-back" aria-label="タイトルへ戻る" data-i18n-aria="backToTitle">‹ TITLE</button>
     <p class="eyebrow">BONUS TRACK</p>
     <span></span>
   </header>
   <div class="bonus-nav">
-    <button type="button" class="carousel-arrow" data-action="bonus-prev" aria-label="前の曲">‹</button>
+    <button type="button" class="carousel-arrow" data-action="bonus-prev" aria-label="前の曲" data-i18n-aria="prevSong">‹</button>
     <div class="bonus-head">
-      <img id="bonus-jacket" class="bonus-jacket" alt="楽曲ジャケット" hidden>
+      <img id="bonus-jacket" class="bonus-jacket" alt="楽曲ジャケット" data-i18n-alt="jacket" hidden>
       <div id="bonus-secret" class="bonus-secret" hidden><b>?</b><small>SECRET TRACK</small></div>
       <h1 id="bonus-title"></h1>
       <p id="bonus-meta" class="select-meta"></p>
       <p id="bonus-description" class="select-description"></p>
     </div>
-    <button type="button" class="carousel-arrow" data-action="bonus-next" aria-label="次の曲">›</button>
+    <button type="button" class="carousel-arrow" data-action="bonus-next" aria-label="次の曲" data-i18n-aria="nextSong">›</button>
   </div>
   <div id="bonus-records" class="bonus-records"></div>
-  <p class="hint"><span class="pc-only">← → 曲切替　ESC 戻る</span><span class="touch-only">‹ › で曲切替</span></p>
+  <p class="hint"><span class="pc-only" data-i18n="hintBonusPc">← → 曲切替　ESC 戻る</span><span class="touch-only" data-i18n="hintBonusTouch">‹ › で曲切替</span></p>
 </section>
 
 <main id="play-screen" class="play-screen" hidden>
   <div id="promo-badge" class="promo-badge" hidden><b>syuPworks</b><span>RHYTHM GAME</span></div>
   <aside class="work-panel">
-    <div class="media-frame"><img id="work-jacket" alt="作品アートワーク"><canvas id="work-canvas" aria-label="演奏で描かれるジャケット" hidden></canvas></div>
+    <div class="media-frame"><img id="work-jacket" alt="作品アートワーク" data-i18n-alt="artwork"><canvas id="work-canvas" aria-label="演奏で描かれるジャケット" data-i18n-aria="paintedJacket" hidden></canvas></div>
     <div class="work-copy">
       <p class="eyebrow">FEATURED WORK</p>
       <h1 id="work-title"></h1>
@@ -130,10 +168,10 @@
       <div class="hud-diff"><b id="hud-difficulty">EASY</b><small id="hud-level"></small></div>
       <div class="hud-score"><small>SCORE</small><b id="hud-score">0</b></div>
       <div id="hp-widget" class="hp-widget"><small>HP</small><span class="hp-track"><i id="hp-fill"></i></span><b id="hp-value">100</b></div>
-      <button type="button" id="pause-button" class="pause-button" data-action="pause" aria-label="一時停止">Ⅱ</button>
+      <button type="button" id="pause-button" class="pause-button" data-action="pause" aria-label="一時停止" data-i18n-aria="pause">Ⅱ</button>
     </header>
     <div id="game" class="game">
-      <canvas id="board" aria-label="プレイフィールド"></canvas>
+      <canvas id="board" aria-label="プレイフィールド" data-i18n-aria="playfield"></canvas>
       <div id="combo-display" class="combo-display" hidden><b id="combo-number">0</b><span>COMBO</span></div>
       <div id="judgement" class="judgement"><b></b><small></small></div>
       <div id="stage-banner" class="stage-banner" hidden></div>
@@ -159,7 +197,7 @@
       <h1 id="result-kind" class="result-kind"></h1>
       <div id="result-stars" class="result-stars" role="img"></div>
       <div class="result-song">
-        <img id="result-jacket" alt="楽曲ジャケット"><canvas id="result-art" class="result-art" aria-label="あなたの演奏で描かれたジャケット" hidden></canvas>
+        <img id="result-jacket" alt="楽曲ジャケット" data-i18n-alt="jacket"><canvas id="result-art" class="result-art" aria-label="あなたの演奏で描かれたジャケット" data-i18n-aria="yourPainting" hidden></canvas>
         <div>
           <h2 id="result-title"></h2>
           <p id="result-difficulty" class="result-difficulty"></p>
@@ -176,7 +214,7 @@
       </div>
       <div id="result-mode" class="result-mode" hidden></div>
       <div id="result-unlock" class="result-unlock" hidden></div>
-      <p id="result-auto" class="result-auto" hidden>AUTO PLAY — 記録されません</p>
+      <p id="result-auto" class="result-auto" hidden></p>
     </div>
     <div class="result-right">
       <div class="result-judgements">
@@ -187,19 +225,19 @@
         <div class="j-combo"><span>MAX COMBO</span><b id="result-max-combo"></b></div>
         <div class="j-fastslow"><span><em class="fast">FAST</em> / <em class="slow">SLOW</em></span><b id="result-fastslow"></b></div>
       </div>
-      <section class="result-graph" aria-label="プレイの推移">
+      <section class="result-graph" aria-label="プレイの推移" data-i18n-aria="playLog">
         <h3>PLAY LOG</h3>
         <canvas id="result-timeline"></canvas>
         <div id="result-achievements" class="result-achievements"></div>
       </section>
-      <section class="result-graph" aria-label="タイミング分布">
+      <section class="result-graph" aria-label="タイミング分布" data-i18n-aria="timingSpread">
         <h3>TIMING <small id="result-timing-mean"></small></h3>
         <div id="result-timing-grade" class="timing-grade" hidden></div>
         <canvas id="result-histogram"></canvas>
         <p id="result-offset-tip" class="result-offset-tip" hidden></p>
       </section>
     </div>
-    <nav class="menu result-actions" aria-label="リザルト操作">
+    <nav class="menu result-actions" aria-label="リザルト操作" data-i18n-aria="resultMenu">
       <button type="button" data-action="result-retry">RETRY</button>
       <button type="button" data-action="result-select">SONG SELECT</button>
       <button type="button" data-action="result-title">TITLE</button>
