@@ -28,6 +28,7 @@
     <button type="button" data-action="title-options">OPTIONS</button>
     <button type="button" data-action="title-about">ABOUT</button>
   </nav>
+  <p id="title-shared" class="title-shared" hidden></p>
   <p class="title-foot">syuPworks 2026 <span class="version-tag">Ver.2.1</span></p>
   <p class="hint"><span class="pc-only" data-i18n="hintTitlePc">↑↓ 選択　ENTER 決定</span><span class="touch-only">TAP TO SELECT</span></p>
   <p class="privacy-note"><span data-i18n="privacyText">同意いただいた場合のみ、アクセス解析に Google アナリティクス（Cookie を使用）でプレイ状況を収集します。名前などの個人情報は送信しません。</span><a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer" data-i18n="privacyLink" data-i18n-link="privacyHref">Google のデータ取り扱い</a><span class="privacy-ask" hidden><button type="button" data-consent="granted" data-i18n="consentYes">許可する</button><button type="button" data-consent="denied" data-i18n="consentNo">許可しない</button></span><span class="privacy-state" hidden><span class="privacy-state-label"></span><button type="button" data-consent="change" data-i18n="consentChange">変更</button></span></p>
@@ -104,6 +105,13 @@
       <h2>UPDATE HISTORY</h2>
       <div id="about-history" class="history-list"><p class="about-note">…</p></div>
     </section>
+    <section class="about-card about-support">
+      <h2 data-i18n="supportHead">サポート・お問い合わせ</h2>
+      <p class="about-note" data-i18n="supportText">本ゲームは個人制作の無料Webゲームです。個別の操作案内、攻略相談、動作保証、セーブデータの復旧などのサポートは提供していません。</p>
+      <p class="about-note" data-i18n="supportContact">不具合の報告やその他のご連絡は、公式lit.linkに掲載されているSNSのDM・メッセージ機能などをご利用ください。</p>
+      <p class="about-note" data-i18n="supportNoReply">すべてのご連絡への返信・対応をお約束するものではありません。</p>
+      <div id="about-support-links" class="link-buttons"></div>
+    </section>
   </div>
   <p class="hint"><span class="pc-only" data-i18n="hintAboutPc">↑ ↓ スクロール　ESC 戻る</span><span class="touch-only" data-i18n="hintAboutTouch">外部リンクは新しいタブで開きます</span></p>
 </section>
@@ -139,11 +147,16 @@
       <h1 id="bonus-title"></h1>
       <p id="bonus-meta" class="select-meta"></p>
       <p id="bonus-description" class="select-description"></p>
+      <div id="bonus-listen" class="bonus-listen" hidden>
+        <button type="button" id="bonus-listen-button" data-action="bonus-listen" aria-pressed="false"><i aria-hidden="true">▶</i><span>試聴（30秒）</span></button>
+        <span class="bonus-listen-bar" aria-hidden="true"><i id="bonus-listen-fill"></i></span><small id="bonus-listen-time">0:00 / 0:30</small>
+      </div>
+      <div id="bonus-links" class="song-links bonus-links" hidden><span id="bonus-link-buttons" class="link-buttons"></span><button type="button" class="link-button share-button" data-action="bonus-share"><span data-i18n="share">共有</span><i aria-hidden="true">⤴</i></button></div>
     </div>
     <button type="button" class="carousel-arrow" data-action="bonus-next" aria-label="次の曲" data-i18n-aria="nextSong">›</button>
   </div>
   <div id="bonus-records" class="bonus-records"></div>
-  <p class="hint"><span class="pc-only" data-i18n="hintBonusPc">← → 曲切替　ESC 戻る</span><span class="touch-only" data-i18n="hintBonusTouch">‹ › で曲切替</span></p>
+  <p class="hint"><span class="pc-only" data-i18n="hintBonusPc">← → 曲切替　SPACE 試聴　ESC 戻る</span><span class="touch-only" data-i18n="hintBonusTouch">‹ › で曲切替</span></p>
 </section>
 
 <main id="play-screen" class="play-screen" hidden>
@@ -248,7 +261,12 @@
 <div id="toast" class="toast" hidden></div>
 <audio id="audio" preload="auto"></audio>
 <audio id="preview" preload="none"></audio>
+<audio id="listen" preload="none"></audio>
 <script src="result-fx.js"></script>
+
+<script src="i18n/zh-hans.js"></script>
+<script src="i18n/zh-hant.js"></script>
+<script src="i18n/ko.js"></script>
 <script src="game.js"></script>
 <script src="analytics.js"></script>
 </body>
